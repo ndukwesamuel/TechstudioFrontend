@@ -1,0 +1,42 @@
+
+ .Dash_sec_one{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid green;
+  padding: 1rem;
+}
+
+ .Dash_sec_1{
+  color: var(--Nav-bg-color);
+}
+
+.dash_search{
+  display: flex;
+  align-items: center;
+}
+
+.Dash_input{
+  width: 40px;
+  display: block;
+}
+
+.Create_Course_btn{
+  background-color: #0266F4;
+  display: block;
+}
+
+.Create_Classes_btn{
+  color: #0266F4;
+  background-color: white;
+  display: block;
+
+}
+
+
+ .dash_profile{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}

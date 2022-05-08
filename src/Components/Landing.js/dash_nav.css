@@ -1,0 +1,21 @@
+
+
+.Dash_nav{
+    margin-left: 2rem;
+}
+.Dash_nav button{
+    margin-right: 2rem;
+    border: none;
+
+}
+
+
+.active__dash{
+    border-bottom: 2px solid #0266F4 !important;
+}
+
+
+.Dash_nav_hr{
+    margin: 0;
+    margin-bottom: 1rem;
+}

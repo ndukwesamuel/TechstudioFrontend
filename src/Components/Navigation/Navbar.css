@@ -1,0 +1,30 @@
+.main_sec_one{
+  height: 100vh;
+  background-color: var(--Nav-bg-color);
+
+}
+
+.main_dashboard{
+  display: flex;
+}
+
+.nav_icons{
+  margin-top: 2rem;
+}
+
+.nav_icons > div{
+  margin-bottom: 3em;
+  text-align: center;
+
+}
+
+.logo_icon{
+ width: 40%;
+
+}
+
+.nav_icons > Link > div >img {
+ width: 40%;
+
+}
+
