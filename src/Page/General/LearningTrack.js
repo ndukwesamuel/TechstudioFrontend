@@ -27,7 +27,6 @@ function LearningTrack() {
           alt=""
         />
         <p className="LearningTrack_Sec_1_our"> Our Learning Tracks</p>
-
         <p className="LearningTrack_Sec_1_p2">
           Select any of our courses to get started on your tech journey
         </p>
@@ -41,7 +40,6 @@ function LearningTrack() {
           <button>Android Development</button>
           <button onClick={FrontEndTrack}>Front End Development</button>
           <button>Back End Development</button>
-          <p>{learn.name}</p>
         </div>
       </div>
 

@@ -14,7 +14,7 @@ function UiUx({ learnTrack }) {
 
         <div className="item_container_sec">
           <h2 className="item_container_h2">{name}</h2>
-          <p>{des}</p>
+          <p className="item_container_sec_des">{des}</p>
 
           <div className="item_container_duration">
             <div>

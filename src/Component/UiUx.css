@@ -1,10 +1,67 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,900;1,900&display=swap');
 
-@media (min-width: 576px) {  }
+  .item_container{
+    background-color: white;
+    padding: 1rem 0;
+  }
+.item_container_track_icon{
+  width: 20rem;
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+  border-radius: 2rem;
 
-@media (min-width: 768px) {  }
+}
+.item_container_h2{
+ text-align: center;
+ padding: 0.3rem 0.3rem;
+ 
+}
+.item_container_sec_des{
+  padding: 0 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.item_container_duration{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+.item_container_price_enrol{
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) { 
+
+  .item_container_sec_des{
+    text-align: justify;
+    padding: 0 3rem;
+    font-size: 1.5rem;
+  }
+  
+  .item_container_track_icon{
+    
+    margin-top: 0;
+  }
+  .item_container_price_enrol button{
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+    
+    /* margin-right:2rem ; */
+}
+
+ }
+
+
 
 @media (min-width: 992px) { 
 
@@ -22,26 +79,25 @@
   .item_container{
     display: flex;
     align-items: center;
-    background-color: white;
-    width: 80%;
+    width: 85%;
     margin-left: 10%;
     margin-top: 2rem;
     border-radius: 0.5rem;
-    margin-bottom: 2rem;
-    gap: 3rem;
-    padding: 1rem;
+
 
   }
   
   
   .item_container_track_icon{
     width: 10rem;
+    border-radius: 0rem;
+    margin-left: 1rem;
   }
 
   .item_container_duration{
-    display: flex;
     gap: 2rem;
-    align-items: center;
+    justify-content:flex-start;
+    margin-left: 3rem;
   }
 
   .item_container_duration div{
@@ -61,6 +117,7 @@
 .item_container_price_enrol button{
     padding: 0.5rem 3rem;
     font-size: 1rem;
+    margin-right:2rem ;
 }
 
 
@@ -72,10 +129,10 @@
   font-weight: bold;
   font-size: 1.3rem;
   margin-top: 1rem;
+  margin-left: 3rem;
 }
 }
 
 @media (min-width: 1200px) {  }
 
 @media (min-width: 1400px) {  }
-
