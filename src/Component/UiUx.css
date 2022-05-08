@@ -1,0 +1,81 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,900;1,900&display=swap');
+
+@media (min-width: 576px) {  }
+
+@media (min-width: 768px) {  }
+
+@media (min-width: 992px) { 
+
+  .UiUx{
+    padding-bottom: 10rem;
+  }
+
+
+  .item_container_h2{
+    font-size: 1.4rem;
+   font-weight: bold;
+   margin-top: 2rem;
+  }
+
+  .item_container{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    gap: 3rem;
+    padding: 1rem;
+
+  }
+  
+  
+  .item_container_track_icon{
+    width: 10rem;
+  }
+
+  .item_container_duration{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .item_container_duration div{
+    align-items: center;
+  }
+
+  .item_container_duration img{
+    width: 2rem;
+  }
+ 
+.item_container_price_enrol{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item_container_price_enrol button{
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+}
+
+
+.item_container_sec :nth-child(2){
+  text-align: justify;
+}
+
+.item_container_price{
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+}
+
+@media (min-width: 1200px) {  }
+
+@media (min-width: 1400px) {  }
+
