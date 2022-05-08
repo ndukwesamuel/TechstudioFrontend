@@ -5,6 +5,7 @@
     background-color: white;
     padding: 1rem 0;
   }
+
 .item_container_track_icon{
   width: 16rem;
   display: block;
@@ -16,7 +17,6 @@
 .item_container_h2{
  text-align: center;
  padding: 0.3rem 0.3rem;
- 
 }
 .item_container_sec_des{
   padding: 0 1rem;
@@ -40,7 +40,7 @@ flex-direction: column;
   justify-content: space-around;
   gap: 1rem;
   padding-bottom: 1rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   font-weight: bold;
 }
 
@@ -75,6 +75,8 @@ flex-direction: column;
 
 @media (min-width: 992px) { 
 
+
+
   .UiUx{
     padding-bottom: 10rem;
   }
@@ -90,7 +92,7 @@ flex-direction: column;
     display: flex;
     align-items: center;
     width: 85%;
-    margin-left: 10%;
+    margin-left: 8%;
     margin-top: 2rem;
     border-radius: 0.5rem;
   }
@@ -131,6 +133,7 @@ flex-direction: column;
 
 .item_container_sec :nth-child(2){
   text-align: justify;
+  font-size: 1rem;
 }
 
 .item_container_price{
@@ -141,6 +144,20 @@ flex-direction: column;
 }
 }
 
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) { 
+  .item_container{
+      
+    width: 70%;
+  }
 
-@media (min-width: 1400px) {  }
+ }
+
+@media (min-width: 1440px) { 
+  .LearningTrack_Sec_1_logo_icon{
+    width: 40%;
+  }
+
+
+
+
+ }
