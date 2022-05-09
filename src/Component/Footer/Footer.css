@@ -1,0 +1,17 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2666;
+    margin-top: 2rem;
+    color: white;
+}
+
+
+.footer_one{
+    display: flex;
+    align-items: center;
+}
+
+.footer_one >img{
+    width: 2rem;
+}
