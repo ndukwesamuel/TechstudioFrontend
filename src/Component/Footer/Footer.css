@@ -1,7 +1,14 @@
+.fotter_policy{
+    display: none;
+}
+.main_foot{
+    background-color: #1F2666;
+    padding-bottom: 3rem;
+
+}
 .footer{
     display: flex;
     flex-direction: column;
-    background-color: #1F2666;
     margin-top: 2rem;
     color: white;
     /* padding:1rem 0 0  3rem  ; */
@@ -58,5 +65,117 @@ font-size: 0.875rem;
 
 .footer_form >img {
 width: 2rem;
+        
+    }
+
+    .footer_hr{
+        display: none;
+    }
+
+    .footer_form_btn {
+        display: none;
+    }
+
+    @media (min-width: 576px) { 
+        .footer_form {
+          
+        width: 17rem;
+        
+
+        
+        }
+
+        .footer_form >img {
+            width: 2rem;
+                    
+                }
+
+
+
+                .footer_form > input {
+                    width: 15rem;
+                
+                }
+     }
+
+
+
+
+     @media (min-width: 768px) { 
+
+
+        .footer{
+            display: flex;
+            flex-direction: row;
+            color: white;
+            justify-content: center;
+            text-align: left;
+            gap: 2rem;
+        }
+
+
+        .footer_one{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content:flex-start;
+        }
+
+        .footer_form{
+            width: 13rem;
+        }
+
+        .footer_form >img{
+            width: 2rem;
+        }
+
+        .footer_form > input{
+            width: 10rem;
+        }
+
+     }
+
+
+     @media (min-width: 992px) { 
+         .fotter_policy{
+             display: block;
+         }
+            .footer_form_btn {
+            display: block;
+        }
+    
+        .footer{
+            justify-content: space-evenly;
+        }
+        .footer_form_img{
+            display: none;
+        }
+
+
+        .footer_hr{
+            display: block;
+            width: 80%;
+        height: 5px;
+        margin-left: auto;
+        margin-right: 2rem;
+        background-color: white;
+        }
+
+        .term_div{
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            align-items: center;
+            color: white;
+            margin-right: 4rem;
+        }
+
+        .term_div img{
+            width: 1.25rem;
+        }
+
+        .term_div p {
+            margin-top: 1rem;
+        }
         
     }
