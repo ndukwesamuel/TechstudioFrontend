@@ -8,7 +8,7 @@ function Footer() {
         <img className="" src="/assets/images/logo.svg" alt="" />
         <p>Techstudio Academy</p>
       </div>
-      <div>
+      <div className="footer_two">
         <p>Courses</p>
         <div>
           <p>Front End Development </p>
@@ -24,8 +24,9 @@ function Footer() {
       <div>
         <p>Subscribe to our newsletter</p>
         <form action="">
-          <div>
+          <div className="footer_form">
             <input type="email" name="" id="" placeholder="Email Address" />
+            <img src="/assets/images/arrow.png" alt="" />
           </div>
         </form>
       </div>
