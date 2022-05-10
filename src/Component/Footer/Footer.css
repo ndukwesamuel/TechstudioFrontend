@@ -1,0 +1,59 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2666;
+    margin-top: 2rem;
+    color: white;
+    padding:1rem 0 0  3rem  ;
+    justify-content: center;
+}
+
+
+.footer > div{
+    margin-top: 3rem;
+}
+
+
+.footer_one{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer_one >img{
+    width: 2rem;
+}
+
+.footer_two > div > p {
+    font-size: 0.8rem;
+}
+
+.footer_form {
+    display: flex;
+    background-color: white;
+width: 15rem;
+margin-bottom: 2rem;
+border-radius: 0.5rem;
+margin-left: -1rem;
+padding-left: 1rem;
+
+}
+
+
+.footer_form > input {
+    border: none;
+    outline: none;
+
+}
+
+.footer_form > input::placeholder {
+color: black;    
+font-size: 0.875rem;
+
+}
+
+
+.footer_form >img {
+width: 2rem;
+        
+    }

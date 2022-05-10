@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,900;1,900&display=swap');
+
+  .item_container{
+    background-color: white;
+    padding: 1rem 0;
+  }
+
+.item_container_track_icon{
+  width: 16rem;
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+
+}
+.item_container_h2{
+ text-align: center;
+ padding: 0.3rem 0.3rem;
+}
+.item_container_sec_des{
+  padding: 0 1rem;
+  text-align: left;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.item_container_duration{
+  display: flex;
+flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  margin-left: 2rem;
+  gap: 1rem;
+}
+
+
+.item_container_price_enrol{
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  /* margin-top: 1rem; */
+  font-weight: bold;
+}
+
+@media (min-width: 768px) { 
+
+  .item_container_sec_des{
+    text-align: justify;
+    padding: 0 3rem;
+    font-size: 1.5rem;
+  }
+  
+  .item_container_track_icon{
+
+    margin-top: 0;
+  }
+  .item_container_price_enrol button{
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+    /* margin-right:2rem ; */
+}
+
+.item_container_duration{
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+ }
+
+
+
+@media (min-width: 992px) { 
+
+
+
+  .UiUx{
+    padding-bottom: 10rem;
+  }
+
+
+  .item_container_h2{
+    font-size: 1.4rem;
+   font-weight: bold;
+   margin-top: 2rem;
+  }
+
+  .item_container{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin-left: 8%;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  
+  .item_container_track_icon{
+    width: 10rem;
+    border-radius: 0rem;
+    margin-left: 1rem;
+  }
+
+  .item_container_duration{
+    gap: 2rem;
+    justify-content:flex-start;
+    margin-left: 3rem;
+  }
+
+  .item_container_duration div{
+    align-items: center;
+  }
+
+  .item_container_duration img{
+    width: 2rem;
+  }
+ 
+.item_container_price_enrol{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item_container_price_enrol button{
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+    margin-right:2rem ;
+}
+
+
+.item_container_sec :nth-child(2){
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.item_container_price{
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+}
+
+@media (min-width: 1200px) { 
+  .item_container{
+      
+    width: 70%;
+  }
+
+ }
+
+@media (min-width: 1440px) { 
+  .LearningTrack_Sec_1_logo_icon{
+    width: 40%;
+  }
+
+
+
+
+ }
