@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import "./Navbar.css";
 
@@ -24,9 +25,14 @@ const Navbar = () => {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <Link
+                to="/about"
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+              >
                 About
-              </a>
+              </Link>
             </li>
 
             <li class="nav-item dropdown">
