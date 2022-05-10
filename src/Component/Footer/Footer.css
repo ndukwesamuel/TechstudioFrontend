@@ -4,10 +4,10 @@
     background-color: #1F2666;
     margin-top: 2rem;
     color: white;
-    padding:1rem 0 0  3rem  ;
+    /* padding:1rem 0 0  3rem  ; */
     justify-content: center;
+    text-align: center;
 }
-
 
 .footer > div{
     margin-top: 3rem;
@@ -18,6 +18,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    justify-content:center;
 }
 
 .footer_one >img{
@@ -34,8 +35,10 @@
 width: 15rem;
 margin-bottom: 2rem;
 border-radius: 0.5rem;
-margin-left: -1rem;
+/* margin-left: -1rem; */
 padding-left: 1rem;
+margin: auto;
+margin-bottom: 1rem;
 
 }
 

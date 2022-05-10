@@ -74,7 +74,7 @@
 
 .Home_sec_two_sec_one_first >:nth-child(3) {
     font-size: 0.875rem;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 .Home_sec_three_innerDiv{
@@ -125,6 +125,11 @@
 .Home_sec_four_sec_two{
     padding: 2rem 2rem;
 
+}
+
+.Home_sec_four_images{
+    display: block ;
+    margin: auto;
 }
 
 .Home_sec_four_sec_two :nth-child(1){
