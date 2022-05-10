@@ -1,5 +1,5 @@
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import "./App.css";
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./Component/Navbar";
 import About from "./Page/About";
 import Home from "./Page/Home";
@@ -7,17 +7,11 @@ import Home from "./Page/Home";
 function App() {
   return (
     <BrowserRouter>
-      <section className="main_dashboard">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-
-          <Route path="/dashboard" element={<div> School</div>} />
-          <Route path="message" element={<div> message</div>} />
-          <Route path="task" element={<div> TAsk</div>} />
-        </Routes>
-      </section>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </BrowserRouter>
   );
 }
