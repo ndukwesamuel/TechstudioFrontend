@@ -35,11 +35,12 @@ function Home() {
           <h2>Why choose Techstudio?</h2>
           <img
             className=" img-fluid Home_sec_two_sec_one_img "
-            src="/assets/images/icon_4.PNG"
+            src="/assets/images/icon_tab.PNG"
             alt=""
           />
         </div>
-        <div className="Home_sec_two_sec_one">
+
+        <div className="Home_sec_two_sec_two">
           <div className=" Home_sec_two_sec_one_first">
             <img
               className=" img-fluid  "
@@ -108,7 +109,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="Home_sec_four">
+      <section className="Home_sec_four __four__">
         <div className="Home_sec_four_sec_one">
           <img
             className="img-fluid Home_sec_four_img"
@@ -130,7 +131,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="Home_sec_four">
+      <section className="Home_sec_four __four2__">
         <div className="">
           <ul>
             <li>
@@ -169,18 +170,20 @@ function Home() {
         </div>
       </section>
 
-      <section className="Home_sec_five">
-        <div>
-          <p>Try TechStudio</p>
-          <p>Get started with Techstudio</p>
-          <button className="btn btn-primary">Get Started</button>
-        </div>
-        <div>
-          <img
-            className="img-fluid Home_sec_five_img2"
-            src="/assets/images/icon_6.png"
-            alt=""
-          />
+      <section className="">
+        <div className="Home_sec_five">
+          <div>
+            <p>Try TechStudio</p>
+            <p>Get started with Techstudio</p>
+            <button className="btn btn-primary">Get Started</button>
+          </div>
+          <div>
+            <img
+              className="img-fluid Home_sec_five_img2"
+              src="/assets/images/icon_6.png"
+              alt=""
+            />
+          </div>
         </div>
       </section>
 
