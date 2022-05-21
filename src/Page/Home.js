@@ -9,14 +9,16 @@ function Home() {
     <div>
       <section className="Home_sec_one">
         <div className="Home_sec_one_sec_1 ">
-          <p>Your Dream Tech Career Starts Here </p>
+          <p className="Home_sec_one_sec_1_p1">
+            Your Dream Tech Career Starts Here{" "}
+          </p>
 
           <p className="">
             Stutern offers graduates a path to a fulfilling career through job
             placement and skills development.
           </p>
 
-          <div className=" Home_sec_one_sec_2">
+          <div className=" Home_sec_one_sec_2 ">
             <button className="btn btn-primary">Take a course</button>
             <button className="btn btn-outline-primary">Log In</button>
           </div>
@@ -29,7 +31,6 @@ function Home() {
           />
         </div>
       </section>
-
       <section className="Home_sec_two">
         <div className="Home_sec_two_sec_one">
           <h2>Why choose Techstudio?</h2>
