@@ -1,8 +1,12 @@
 
+.Home_sec_one_wraper{
+    background-color: #DCE9FA;
+
+
+}
 .Home_sec_one{
     display: flex;
     flex-direction: column-reverse;
-    background-color: #DCE9FA;
     padding-bottom: 4rem;
 }
 
@@ -242,6 +246,28 @@
         padding: 0 6rem;
     }
 
+    .Home_sec_five{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+    }
+
+    .Home_sec_five >:nth-child(2){
+    }
+
+
+    .Home_sec_five_img2{
+        display: block;
+        position: absolute;
+        top: -6.5rem;
+        right:0rem;
+        width: 14rem;
+    }
+
+
+
+
 
 
  }
@@ -331,8 +357,8 @@
 
 
     .Home_sec_five{
-        margin-left: 5rem;
-        margin-right: 2rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
         border-radius: 1rem;
     }
 

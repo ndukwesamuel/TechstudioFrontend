@@ -1,5 +1,7 @@
 import React from "react";
 import Footer from "../Component/Footer/Footer";
+import GetStarted from "../Component/GetStarted";
+import Navbar from "../Component/Navbar";
 
 import img from "../media/UXUI.jpg";
 
@@ -7,30 +9,35 @@ import "./Home.css";
 function Home() {
   return (
     <div>
-      <section className="Home_sec_one">
-        <div className="Home_sec_one_sec_1 ">
-          <p>Your Dream Tech Career Starts Here </p>
+      <Navbar />
 
-          <p className="">
-            Stutern offers graduates a path to a fulfilling career through job
-            placement and skills development.
-          </p>
+      <section className="Home_sec_one_wraper ">
+        <div className="Home_sec_one container">
+          <div className="Home_sec_one_sec_1 ">
+            <p className="Home_sec_one_sec_1_p1">
+              Your Dream Tech Career Starts Here{" "}
+            </p>
 
-          <div className=" Home_sec_one_sec_2">
-            <button className="btn btn-primary">Take a course</button>
-            <button className="btn btn-outline-primary">Log In</button>
+            <p className="">
+              Stutern offers graduates a path to a fulfilling career through job
+              placement and skills development.
+            </p>
+
+            <div className=" Home_sec_one_sec_2 ">
+              <button className="btn btn-primary">Take a course</button>
+              <button className="btn btn-outline-primary">Log In</button>
+            </div>
+          </div>
+          <div>
+            <img
+              className="img-fluid Home_sec_one_img_icon"
+              src="/assets/images/img.png"
+              alt=""
+            />
           </div>
         </div>
-        <div>
-          <img
-            className="img-fluid Home_sec_one_img_icon"
-            src="/assets/images/img.png"
-            alt=""
-          />
-        </div>
       </section>
-
-      <section className="Home_sec_two">
+      <section className="Home_sec_two  ">
         <div className="Home_sec_two_sec_one">
           <h2>Why choose Techstudio?</h2>
           <img
@@ -82,7 +89,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="Home_sec_three">
+      <section className="Home_sec_three container">
         <div>
           <div className="Home_sec_three_innerDiv">
             <p className="Home_sec_three_innerDiv_message">
@@ -109,7 +116,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="Home_sec_four __four__">
+      <section className="Home_sec_four __four__ container">
         <div className="Home_sec_four_sec_one">
           <img
             className="img-fluid Home_sec_four_img"
@@ -131,7 +138,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="Home_sec_four __four2__">
+      <section className="Home_sec_four __four2__ container">
         <div className="">
           <ul>
             <li>
@@ -170,21 +177,8 @@ function Home() {
         </div>
       </section>
 
-      <section className="">
-        <div className="Home_sec_five">
-          <div>
-            <p>Try TechStudio</p>
-            <p>Get started with Techstudio</p>
-            <button className="btn btn-primary">Get Started</button>
-          </div>
-          <div>
-            <img
-              className="img-fluid Home_sec_five_img2"
-              src="/assets/images/icon_6.png"
-              alt=""
-            />
-          </div>
-        </div>
+      <section className="container">
+        <GetStarted />
       </section>
 
       <footer>

@@ -1,0 +1,113 @@
+.login_div input{
+    margin-bottom: 1gg rem;
+}
+.login_div_p1{    font-size: 1.5rem;
+    color: #1F2666;
+}
+
+.login_wrapper{
+    margin-top: 2rem;
+}
+
+
+
+.login_div_form_username input{
+    display: block;
+    
+}
+
+.login_div{
+    margin: 2rem 0 2rem 0;
+    padding: 2rem 1rem 2rem 1rem ;
+box-shadow: 1px 2px 9px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 2px 9px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 2px 9px 1px rgba(0,0,0,0.75);
+}
+
+.login_div_sub{
+    text-align: center;
+    
+}
+
+.login_div_sub > button{padding: 0.3rem 3rem;
+    margin: 1rem 0;
+    
+}
+
+.login_div_radio_input{
+    margin-left: 1rem;
+}
+
+
+.login_img{
+    display: none;
+}
+
+
+@media (min-width: 768px) { 
+
+
+
+    .login_div_form_username{
+        display:  flex;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    
+    .login_div_form_username input{
+        width: 20rem;
+    }
+
+    .login_div_time_shedule{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    
+    .login_div_time_shedule  input{
+        width: 20rem;
+    }
+
+    
+
+    .login_div_time_shedule .form-select-lg{
+        width: 20rem;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+    }
+
+}
+
+ @media (min-width: 992px) { 
+     .login_img{
+     display: block;
+     width: 30rem;
+ }
+
+ .login_wrapper{
+     display: flex;
+     gap: 2rem;
+ }
+
+ .login_div{
+     width: 30rem;
+ }
+
+ .login_div_form_username input{
+    width: 13rem;
+}
+
+.login_div_time_shedule  input{
+    width: 13rem;
+}
+
+
+
+.login_div_time_shedule .form-select-lg{
+    width: 13rem;
+}
+    
+}
+
