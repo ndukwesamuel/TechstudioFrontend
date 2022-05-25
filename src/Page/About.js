@@ -37,7 +37,7 @@ function About() {
               <div className="About_sec_one_right">
                 <img
                   className="img-fluid "
-                  src="/assets/images/About_icon.png"
+                  src="assets/images/About_icon.png"
                   alt=""
                 />
               </div>
