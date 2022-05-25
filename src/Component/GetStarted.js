@@ -1,5 +1,7 @@
 import React from "react";
 
+import get_img from "../media/Image1.png";
+
 function GetStarted() {
   return (
     <>
@@ -10,11 +12,7 @@ function GetStarted() {
           <button className="btn btn-primary">Get Started</button>
         </div>
         <div>
-          <img
-            className="img-fluid Home_sec_five_img2"
-            src="assets\Icons\Tech Studio images\Image1.PNG"
-            alt=""
-          />
+          <img className="img-fluid Home_sec_five_img2" src={get_img} alt="" />
         </div>
       </div>
     </>

@@ -4,6 +4,7 @@ import GetStarted from "../Component/GetStarted";
 import Navbar from "../Component/Navbar";
 import "./About.css";
 
+import about_img from "../media/About_icon.PNG";
 function About() {
   return (
     <div>
@@ -35,11 +36,7 @@ function About() {
             </div>
             <div class="col-md-6">
               <div className="About_sec_one_right">
-                <img
-                  className="img-fluid "
-                  src="/assets/images/About_icon.png"
-                  alt=""
-                />
+                <img className="img-fluid " src={about_img} alt="" />
               </div>
             </div>
           </div>
