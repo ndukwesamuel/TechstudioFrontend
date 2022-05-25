@@ -8,13 +8,13 @@ const Navbar = () => {
     <div className="container">
       <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <Link class="navbar-brand" to="/">
             <img
               className="nav_logo_icon"
               src="/assets/images/logo.svg"
               alt=""
             />
-          </a>
+          </Link>
 
           <button
             class="navbar-toggler"
@@ -53,7 +53,7 @@ const Navbar = () => {
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a className="dropdown-item" href="u">
                       Action
                     </a>
                   </li>
@@ -80,20 +80,23 @@ const Navbar = () => {
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <Link class="nav-link" to="/contact">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
 
             <div class="d-flex  ">
-              <button class=" btn btn-primary" type="submit">
-                Sign In
-              </button>
-
-              <button class="sign btn " type="submit">
-                Sign up
-              </button>
+              <Link to="/login">
+                <button class=" btn btn-primary" type="submit">
+                  Sign In
+                </button>
+              </Link>
+              <Link to="/signup ">
+                <button class="sign btn " type="submit">
+                  Sign up
+                </button>
+              </Link>
             </div>
           </div>
         </div>

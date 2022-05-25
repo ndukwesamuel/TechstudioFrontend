@@ -1,0 +1,30 @@
+
+.login_forget{
+    font-weight: 600;
+    color: #0266F4;
+    text-decoration: none;
+}
+
+.login_forget > p {
+    margin-top: 1rem;
+}
+@media (min-width: 768px) { 
+
+.signUp_div{
+    display: block;
+    margin: auto !important;
+    width: 25rem;
+}
+
+ }
+
+
+ @media (min-width: 992px) { 
+    .signUp_div{
+        margin: 0 !important;
+    } 
+.signUp_div_email_passowrd > div{
+    
+    margin-top: 2rem !important;
+}
+}

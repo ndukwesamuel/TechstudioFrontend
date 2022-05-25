@@ -1,9 +1,13 @@
 import React from "react";
+import Footer from "../Component/Footer/Footer";
+import GetStarted from "../Component/GetStarted";
+import Navbar from "../Component/Navbar";
 import "./About.css";
 
 function About() {
   return (
     <div>
+      <Navbar />
       <section className="container">
         <div class="About_sec_one">
           <div class="row">
@@ -79,58 +83,160 @@ function About() {
             </p>
           </div>
 
-          <div className="contanier-fluid">
-            <div className="row">
-              <div className="col-md-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
+          <div className="About_sec_three_core">
+            <div className="About_sec_three_core_wraper">
+              <div className="About_sec_three_core_wraper_sec1">
+                <img
+                  src="assets\Icons\Tech Studio images\clock (4).png"
+                  alt=""
+                  className=""
+                />
+                <p>Flexibility</p>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt
+                </p>
               </div>
 
-              <div className="col-md-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
+              <div className="About_sec_three_core_wraper_sec2">
+                <img
+                  src="assets\Icons\Tech Studio images\noun_workspace.png"
+                  alt=""
+                />
+                <p>Condusive Environment</p>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt
+                </p>
               </div>
-              <div className="col-md-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
-              </div>
-              <div className="col-md-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
-              </div>
-              <div className="col-md-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
-              </div>
-              <div className="col-md-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
-              </div>
-              <div className="col-md-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
+
+              <div className="About_sec_three_core_wraper_sec3">
+                <img
+                  src="assets\Icons\Tech Studio images\money-bag.png"
+                  alt=""
+                  className=""
+                />
+                <p>Affordable tuition fees</p>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt
+                </p>
               </div>
             </div>
-            <div className="row">
-              <div className="col-md-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
+
+            <div className="About_sec_three_core_wraper">
+              <div className="About_sec_three_core_wraper_sec1">
+                <img
+                  src="assets\Icons\Tech Studio images\noun_Learning.png"
+                  alt=""
+                  className=""
+                />
+                <p>Learning & Development</p>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt
+                </p>
+              </div>
+              <div className="About_sec_three_core_wraper_sec2">
+                <img
+                  src="assets\Icons\Tech Studio images\noun_colleague.png"
+                  alt=""
+                />
+                <p>Great Colleaggues</p>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt
+                </p>
               </div>
 
-              <div className="col-md-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
-              </div>
-              <div className="col-md-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
-              </div>
-              <div className="col-md-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
-              </div>
-              <div className="col-md-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
-              </div>
-              <div className="col-md-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
-              </div>
-              <div className="col-md-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
+              <div className="About_sec_three_core_wraper_sec3">
+                <img
+                  src="assets\Icons\Tech Studio images\Insurance.png"
+                  alt=""
+                />
+                <p>Certificates</p>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt
+                </p>
               </div>
             </div>
           </div>
         </section>
       </div>
+
+      <div className="container">
+        <section className="About_sec_four">
+          <h1> Meet the team</h1>
+          <div className="About_sec_four_sec1">
+            <div className="About_sec_four_sec1_inner1">
+              <img
+                className="img-fluid ceo_img"
+                src="assets\images\ceo1.jpg"
+                alt=""
+              />
+              <p> John Boyega</p>
+              <p>Co-founder && Ceo</p>
+            </div>
+            <div className="About_sec_four_sec1_inner2">
+              <img
+                className="img-fluid ceo_img"
+                src="assets\images\ceo3.jpg"
+                alt=""
+              />
+              <p> KAka Boyega</p>
+              <p>Co-founder && Ceo</p>
+            </div>
+
+            <div className="About_sec_four_sec1_inner3">
+              <img
+                className="img-fluid ceo_img"
+                src="assets\images\ceo3.jpg"
+                alt=""
+              />
+              <p> John Boyega</p>
+              <p>Co-founder && Ceo</p>
+            </div>
+          </div>
+
+          <div className="About_sec_four_sec1">
+            <div className="About_sec_four_sec1_inner1">
+              <img
+                className="img-fluid ceo_img"
+                src="assets\images\ceo1.jpg"
+                alt=""
+              />
+              <p> John Boyega</p>
+              <p>Co-founder && Ceo</p>
+            </div>
+            <div className="About_sec_four_sec1_inner2">
+              <img
+                className="img-fluid ceo_img"
+                src="assets\images\ceo3.jpg"
+                alt=""
+              />
+              <p> KAka Boyega</p>
+              <p>Co-founder && Ceo</p>
+            </div>
+
+            <div className="About_sec_four_sec1_inner3">
+              <img
+                className="img-fluid ceo_img"
+                src="assets\images\ceo3.jpg"
+                alt=""
+              />
+              <p> John Boyega</p>
+              <p>Co-founder && Ceo</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div className="conatainer">
+        <GetStarted />
+      </div>
+
+      <Footer />
     </div>
   );
 }
