@@ -8,7 +8,7 @@ function Contact() {
   return (
     <section>
       <header className="contact_header">
-        <Navbar />
+        <Navbar white_nav />
 
         <div className="contact_header_div">
           <p> We'd love to hear from you</p>
