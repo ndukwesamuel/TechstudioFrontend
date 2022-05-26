@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 
 import "./Navbar.css";
 
-const Navbar = () => {
+let data = "nav-link  ";
+
+const Navbar = ({ white_nav }) => {
   return (
     <div className="container">
       <nav className="navbar navbar-expand-lg navbar-light ">
@@ -33,7 +35,8 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link
                   to="/about"
-                  className="nav-link active"
+                  // className="nav-link active"
+                  className={white_nav ? "text-white nav-link" : "nav-link "}
                   aria-current="page"
                   href="#"
                 >
@@ -43,7 +46,12 @@ const Navbar = () => {
 
               <li className="nav-item dropdown">
                 <a
-                  className="nav-link dropdown-toggle"
+                  // className="nav-link dropdown-toggle"
+                  className={
+                    white_nav
+                      ? "text-white nav-link dropdown-toggle"
+                      : "nav-link dropdown-toggle"
+                  }
                   href="rr"
                   id="navbarDropdown"
                   role="button"
@@ -80,7 +88,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link
                   to="/employer"
-                  className="nav-link active"
+                  className={white_nav ? "text-white nav-link" : "nav-link "}
                   aria-current="page"
                 >
                   Employers
@@ -88,7 +96,10 @@ const Navbar = () => {
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">
+                <Link
+                  className={white_nav ? "text-white nav-link" : "nav-link "}
+                  to="/contact"
+                >
                   Contact Us
                 </Link>
               </li>
@@ -101,7 +112,10 @@ const Navbar = () => {
                 </button>
               </Link>
               <Link to="/signup ">
-                <button className="sign btn " type="submit">
+                <button
+                  className={white_nav ? "text-white sign btn" : "sign btn "}
+                  type="submit"
+                >
                   Sign up
                 </button>
               </Link>
