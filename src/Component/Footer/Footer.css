@@ -9,7 +9,7 @@
 .footer{
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    /* margin-top: 2rem;   i remove this my self can be add latter */
     color: white;
     /* padding:1rem 0 0  3rem  ; */
     justify-content: center;

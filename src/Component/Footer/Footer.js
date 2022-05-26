@@ -14,8 +14,8 @@ function Footer() {
           <div>
             <p>Front End Development </p>
             <p> Android Development</p>
-            <p> UI/UX Design Back</p>
-            <p> end development</p>
+            <p> UI/UX Design</p>
+            <p> Back end development</p>
           </div>
         </div>
         <div>

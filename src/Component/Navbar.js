@@ -6,9 +6,9 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <div className="container">
-      <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container-fluid">
-          <Link class="navbar-brand" to="/">
+      <nav className="navbar navbar-expand-lg navbar-light ">
+        <div className="container-fluid">
+          <Link className="navbar-brand" to="/">
             <img
               className="nav_logo_icon"
               src="/assets/images/logo.svg"
@@ -17,7 +17,7 @@ const Navbar = () => {
           </Link>
 
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -25,14 +25,15 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav m-auto mb-2 mb-lg-0">
+              <li className="nav-item">
                 <Link
                   to="/about"
-                  class="nav-link active"
+                  className="nav-link active"
                   aria-current="page"
                   href="#"
                 >
@@ -40,9 +41,9 @@ const Navbar = () => {
                 </Link>
               </li>
 
-              <li class="nav-item dropdown">
+              <li className="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle"
                   href="rr"
                   id="navbarDropdown"
                   role="button"
@@ -51,49 +52,56 @@ const Navbar = () => {
                 >
                   Courses
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a className="dropdown-item" href="u">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <Link className="text-decoration-none " to="/uiux">
+                    <li className="dropdown-item text-white">Ui/UX Design</li>
+                  </Link>
+
+                  <Link to="/datascience" className="text-decoration-none">
+                    <li className="dropdown-item text-white">Data Sceince</li>
+                  </Link>
+
+                  <Link to="/frontend" className="text-decoration-none">
+                    <li className="dropdown-item text-white">Frontend</li>
+                  </Link>
+
+                  <Link to="/fullstack" className="text-decoration-none">
+                    <li className="dropdown-item text-white">Full Stack</li>
+                  </Link>
+
+                  <Link to="/mobile" className="text-decoration-none">
+                    <li className="dropdown-item text-white">
+                      Mobile Development
+                    </li>
+                  </Link>
                 </ul>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <Link
+                  to="/employer"
+                  className="nav-link active"
+                  aria-current="page"
+                >
                   Employers
-                </a>
+                </Link>
               </li>
 
-              <li class="nav-item">
-                <Link class="nav-link" to="/contact">
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">
                   Contact Us
                 </Link>
               </li>
             </ul>
 
-            <div class="d-flex  ">
+            <div className="d-flex  ">
               <Link to="/login">
-                <button class=" btn btn-primary" type="submit">
+                <button className=" btn btn-primary" type="submit">
                   Sign In
                 </button>
               </Link>
               <Link to="/signup ">
-                <button class="sign btn " type="submit">
+                <button className="sign btn " type="submit">
                   Sign up
                 </button>
               </Link>
