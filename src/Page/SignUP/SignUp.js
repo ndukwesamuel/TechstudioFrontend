@@ -1,12 +1,6 @@
 import axios from "axios";
 import React, { useRef } from "react";
-import {
-  Link,
-  Navigate,
-  unstable_HistoryRouter,
-  useNavigate,
-} from "react-router-dom";
-import { loginCall } from "../../apiCalls";
+import { useNavigate } from "react-router-dom";
 import Footer from "../../Component/Footer/Footer";
 import Navbar from "../../Component/Navbar";
 import Reg from "../../Component/Reg";
@@ -15,7 +9,7 @@ import { useGlobalContext } from "../../context/AuthContext";
 import "./signUp.css";
 
 function SignUp() {
-  const { user, urls, name, dispatch } = useGlobalContext();
+  const { urls } = useGlobalContext();
   const navigate = useNavigate();
 
   const first_name = useRef();
