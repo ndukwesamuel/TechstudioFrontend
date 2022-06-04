@@ -63,7 +63,11 @@ function Login() {
                 <p>Forgot Password?</p>
               </Link>
               <div className="login_div_sub">
-                <button className="btn  btn-primary" type="submit">
+                <button
+                  className="btn  btn-primary"
+                  type="submit"
+                  onClick={handleClick}
+                >
                   Login
                 </button>
               </div>

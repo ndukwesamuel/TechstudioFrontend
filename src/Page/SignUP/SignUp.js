@@ -146,7 +146,11 @@ function SignUp() {
               </div>
 
               <div className="login_div_sub">
-                <button className="btn  btn-primary" type="submit">
+                <button
+                  className="btn  btn-primary"
+                  type="submit"
+                  onClick={handleClick}
+                >
                   Get Started
                 </button>
               </div>
