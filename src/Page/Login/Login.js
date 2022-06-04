@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
+import { loginCall } from "../../apiCalls";
 import Footer from "../../Component/Footer/Footer";
 import Navbar from "../../Component/Navbar";
 import Reg from "../../Component/Reg";
+import { useGlobalContext } from "../../context/AuthContext";
 
 import "./login.css";
 
 function Login() {
+  const { urls, dispatch, isFetching } = useGlobalContext();
+
+  const email = useRef();
+  const password = useRef();
+  const handleClick = (e) => {
+    e.preventDefault();
+    loginCall(
+      { email: email.current.value, password: password.current.value },
+      dispatch
+    );
+  };
+
   return (
     <section>
       <Navbar />
@@ -20,11 +34,17 @@ function Login() {
           <div className="login_div signUp_div">
             <p className="login_div_p1"> Welcome Back</p>
             <p>Let’s continue from where we stopped</p>
-            <form action="">
+            <form action="" onSubmit={handleClick}>
               <div className="signUp_div_email_passowrd ">
                 <div>
                   <label htmlFor="">Email Address</label>
-                  <input type="email" name="" id="" className="form-control" />
+                  <input
+                    type="email"
+                    name=""
+                    id=""
+                    className="form-control"
+                    ref={email}
+                  />
                 </div>
 
                 <div>
@@ -34,6 +54,7 @@ function Login() {
                     name=""
                     id=""
                     className="form-control"
+                    ref={password}
                   />
                 </div>
               </div>

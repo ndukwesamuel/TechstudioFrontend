@@ -1,5 +1,7 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+
+import { useGlobalContext } from "./context/AuthContext";
 import About from "./Page/About";
 import Contact from "./Page/Contact/Contact";
 import Course from "./Page/Courses/Course";
@@ -14,14 +16,21 @@ import Login from "./Page/Login/Login";
 import SignUp from "./Page/SignUP/SignUp";
 
 function App() {
+  const { user } = useGlobalContext();
+  console.log(user);
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/" element={user ? <Home /> : <Login />} />
+
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
+        <Route
+          path="/signup"
+          element={user ? <Navigate to="/" /> : <SignUp />}
+        />
+
+        <Route path="/login" element={user ? <Navigate to="/" /> : <Login />} />
         <Route path="/uiux" element={<Uiux />} />
         <Route path="/frontend" element={<Frontend />} />
         <Route path="/fullstack" element={<Fullstack />} />

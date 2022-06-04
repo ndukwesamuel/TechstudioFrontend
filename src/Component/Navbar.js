@@ -1,11 +1,31 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
-
+import { useGlobalContext } from "../context/AuthContext";
+import {
+  Link,
+  Navigate,
+  unstable_HistoryRouter,
+  useNavigate,
+} from "react-router-dom";
 import "./Navbar.css";
 
 let data = "nav-link  ";
 
 const Navbar = ({ white_nav }) => {
+  const { logoutndler, user } = useGlobalContext();
+  const navigate = useNavigate();
+
+  console.log(logoutndler);
+
+  const oncc = () => {
+    localStorage.removeItem("user");
+    window.location.reload();
+  };
+  // useEffect(() => {
+  //   oncc();
+
+  //   return () => {};
+  // }, []);
+
   return (
     <div className="container">
       <nav className="navbar navbar-expand-lg navbar-light ">
@@ -106,19 +126,29 @@ const Navbar = ({ white_nav }) => {
             </ul>
 
             <div className="d-flex  ">
-              <Link to="/login">
-                <button className=" btn btn-primary" type="submit">
-                  Sign In
+              {user ? (
+                <button className=" btn btn-primary" onClick={oncc}>
+                  logout
                 </button>
-              </Link>
-              <Link to="/signup ">
-                <button
-                  className={white_nav ? "text-white sign btn" : "sign btn "}
-                  type="submit"
-                >
-                  Sign up
-                </button>
-              </Link>
+              ) : (
+                <>
+                  <Link to="/login">
+                    <button className=" btn btn-primary" type="submit">
+                      Sign In
+                    </button>
+                  </Link>
+                  <Link to="/signup ">
+                    <button
+                      className={
+                        white_nav ? "text-white sign btn" : "sign btn "
+                      }
+                      type="submit"
+                    >
+                      Sign up
+                    </button>
+                  </Link>
+                </>
+              )}
             </div>
           </div>
         </div>

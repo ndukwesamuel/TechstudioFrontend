@@ -1,12 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "../Component/Footer/Footer";
 import GetStarted from "../Component/GetStarted";
 import Navbar from "../Component/Navbar";
 
 import img from "../media/UXUI.jpg";
-
 import "./Home.css";
+
+let url = "https://techstudioacademybackend.herokuapp.com/";
+
 function Home() {
+  const [first, setfirst] = useState([]);
+
+  const data = async () => {
+    const res = await fetch(url);
+    const data = await res.json();
+    setfirst(data);
+    console.log(url);
+    console.log(data);
+  };
+  useEffect(() => {
+    data();
+
+    return () => {};
+  }, []);
+
   return (
     <div>
       <Navbar />
