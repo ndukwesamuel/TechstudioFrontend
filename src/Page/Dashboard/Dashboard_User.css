@@ -1,0 +1,20 @@
+.Dashboard_User_Sec2{
+    background-color: #F5F6FA;
+    width: 100%;
+    
+}
+
+.Dashboard_User_Sec2_wrap{
+    gap: 1rem;
+}
+
+.Dashboard_User_Sec2_wrap_center{
+    flex: 9;
+    background-color: purple;
+}
+
+.Dashboard_User_Sec2_wrap_Aside{
+    flex: 3;
+    background-color: gray;
+}
+

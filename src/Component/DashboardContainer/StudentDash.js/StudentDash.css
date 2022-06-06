@@ -1,0 +1,102 @@
+
+/* section one of StudentDash_sec1 start here */
+
+
+.StudentDash_sec1 > input{
+display: block;
+width: 20rem;
+}
+
+/* section one of StudentDash_sec1 end here */
+
+
+
+/* section one of StudentDash_sec2 start here */
+
+.StudentDash_sec2{
+
+  background-color: #DCE9FA;
+  /* overflow-y: hidden; */
+  
+}
+
+.StudentDash_sec2_wrap{
+  position: relative;
+  padding: 2rem 0;
+  padding-left: 1rem;
+}
+
+.StudentDash_sec2{
+  margin-top: 3rem;
+}
+
+.StudentDash_sec2_wrap img{
+  width: 13rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+.StudentDash_sec2_wrap h1{
+  font-size: 2rem;
+  color: #1F2666;
+
+}
+
+.StudentDash_sec2_wrap p {
+  font-size: 1rem;
+  width: 60%;
+  color: #1F2666;
+}
+
+
+/* section one of StudentDash_sec2 end here */
+
+
+
+/* section one of StudentDash_sec3 start here */
+.StudentDash_sec3{
+  margin-top: 3rem;
+}
+.StudentDash_sec3_wrap{
+  gap: 1rem;
+}
+
+.StudentDash_sec3_wrap > div{
+  background-color: white;
+  flex: 2;
+  gap: 1rem;
+
+  padding: 2rem 0.3rem  2rem 0.3rem;
+
+}
+
+
+.StudentDash_sec3_wrap_img_div{
+}
+
+.StudentDash_sec3_wrap > div img{
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.StudentDash_sec3_wrap > div p{
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.StudentDash_sec3_wrap > div p:first-child{
+  font-family: 'Rubik', sans-serif;
+  color: green;
+
+}
+
+
+  
+  /* section one of StudentDash_sec3 end here */
+  
+  
+
+

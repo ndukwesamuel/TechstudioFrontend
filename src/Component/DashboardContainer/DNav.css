@@ -1,0 +1,71 @@
+
+  .DNav{
+    display: block;
+    background-color: #1F2666;
+    width:  100vw;
+    padding-top: 2rem;
+    position: fixed;
+    
+  }
+
+  .dashI{
+    width: 2rem;
+    color: white;
+  }
+
+
+  .DNav_icon{
+    padding-bottom: 1rem;
+    padding-top: 0;
+    margin-top: -1rem;
+  }
+@media (min-width: 576px) { 
+
+
+  .DNav{
+    display: block;
+    background-color: #1F2666;
+    width: 6rem;
+    height: 200vh;
+    padding-top: 2rem;
+    position: static;
+  }
+
+  .DNav_icon{
+    padding-top: 3rem;
+    gap: 2rem;
+  }
+
+  
+
+
+
+
+  
+  .DNav_logo{
+    display: block;
+    margin: auto;
+    
+  }
+  
+  .tttt{
+    position:fixed;
+    left: 1.5rem;
+  }}
+  
+
+
+/* 
+// Small devices (landscape phones, 576px and up)
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */

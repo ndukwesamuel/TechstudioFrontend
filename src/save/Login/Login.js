@@ -15,7 +15,6 @@ function Login() {
   const password = useRef();
   const handleClick = (e) => {
     e.preventDefault();
-
     loginCall(
       { email: email.current.value, password: password.current.value },
       dispatch
