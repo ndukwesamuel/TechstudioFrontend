@@ -4,6 +4,9 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;1,300&display=swap');
+
 :root {
   --Nav-bg-color : #1F2666;
   --Nav-color: #FFFFFF;
@@ -13,26 +16,198 @@
   --main-color: hotpink;
   --pane-padding: 5px 42px;
   --Semibold: 600;
-}
+}`
+
+
+
 
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 
 
-body{
-  font-family: 'Open Sans', sans-serif;
+.RubikFont{
+  font-family: 'Rubik', sans-serif;
+}
+
+
+
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+
+}
+
+.bgColor{
+  background-color: #DCE9FA;
+}  
+
+.bgColor1{
+background-color:#F5F6FA;
+}
+
+.bgColor2{
+background-color: #0266F4;
+}
+
+.bgColor3{
+  background-color:#1F2666;
+  }
+
+  .bgColor4{
+    background-color:white;
+    }
+
+    .bgColor5{
+      background-color: #F5F6FA;
+      }
+   
+
+      .bgColor6{
+        background-color:  #C0C0C180;
+        }
+
+        .bgColor7{
+          background-color: #1F266633;
+        }
+    
+
+/* html{
+font-size: 62.5%;
+} */
+
+.font0rem{
+  font-size: 0.5rem;
+}
+
+
+.font0-75rem{
+  font-size: 0.75rem;
+}
+
+
+
+.font1rem{
+  font-size: 1rem;
+}
+
+.font18px{
+  font-size: 1.125rem;
+  }
+  
+.font44px{
+font-size: 2.75rem;
+}
+
+.font22px{
+font-size: 1.375rem;
+}
+.font24px{
+  font-size: 1.5rem;
+  }
+.font32px{
+  font-size: 2rem;
+}
+
+.font40px{
+  font-size: 2.5rem;
 }
 
 
 
 
+p{
+margin-bottom: 1rem;
+/* line-height: 1px; */
+}
+
+.ExtraBold{
+  font-weight: 800 !important;
+}
+
+.SemiBold{
+  font-weight: 600;
+}
+
+
+.Bold{
+  font-weight: bold;
+}
+
+.Regular{
+  font-weight: 400;
+}
+
+.gap0{
+  gap: 0.5rem;
+}
+
+
+.gap1{
+  gap: 1rem;
+}
+
+.gap2{
+  gap: 2rem;
+}
+
+.gap3{
+  gap: 3rem;
+}
+
+.Color1{
+  color: #5A9EFF;
+}
+
+
+.Color{
+  color: #1F2666;
+}
+
+.width-50{
+  width: 50%;
+}
+
+.width-75{
+  width: 75%;
+}
 
 
 
 
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .bgColor-md{
+    background-color: #DCE9FA;
+  }  
+  
+
+
+  .bgColor1{
+  background-color:#F5F6FA;
+  }
+  
+  .bgColor2{
+  background-color: #0266F4;
+  }
+  
+  .bgColor3{
+    background-color:#1F2666;
+    }
+  
+    .bgColor4{
+      background-color:white;
+      }
+  
+      .bgColor5{
+        background-color: #F5F6FA;
+        }
+  
+
+ }

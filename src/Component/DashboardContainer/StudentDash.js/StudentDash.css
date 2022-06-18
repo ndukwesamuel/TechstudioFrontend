@@ -2,10 +2,97 @@
 /* section one of StudentDash_sec1 start here */
 
 
-.StudentDash_sec1 > input{
-display: block;
-width: 20rem;
+.StudentDash_SearchTask{
+  width: 18rem;
 }
+
+.StudentTaskBoard_wrap{
+
+}
+
+.StudentTaskBoard_wrap >div{
+  width: 47%;
+  border-radius: 0.5rem;
+}
+.StudentTaskBoard_wrap p{
+  margin-bottom: 0;
+}
+
+
+.StudentResource_Chart_Nav > button{
+  width: 4rem;
+
+}
+
+.StudentResource_Chart_Nav{
+  width: 50%;
+}
+
+.StudentResource_Chart_Nav > span:hover{
+  background-color: white;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.StudentResource_Chart_icon{
+  width: 1rem;
+  color: red;
+}
+
+.Download_icon{
+  width: 1rem;
+  color: blue;
+}
+
+.StudentResource_Download p{
+  font-size: 0.8rem;
+}
+
+/* .StudentResource_Tutor_FeedBack >:nth-child(1){
+  width: 60%;
+} */
+
+
+.StudentResource_Tutor_FeedBack img{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid grey;
+
+
+}
+
+
+
+@media (min-width: 768px) { 
+
+
+
+  .StudentTaskBoard_wrap >div{
+    width: 23%;
+  }
+
+  .StudentIntro_wrap > :nth-child(1){
+    width: 20rem;
+  }
+
+
+  .StudentIntro_wrap > :nth-child(2) img{
+    position: absolute;
+    bottom: -3rem;
+    right: 0;
+    width: 15rem;
+  } 
+
+  .StudentResource_Chart >:nth-child(1){
+    width:50%;
+    border:  2px solid red;
+  }
+  .StudentResource_Chart >:nth-child(2){
+    width:50%;
+    border:  2px solid red;
+  }
+
+ }
 
 /* section one of StudentDash_sec1 end here */
 
@@ -13,12 +100,6 @@ width: 20rem;
 
 /* section one of StudentDash_sec2 start here */
 
-.StudentDash_sec2{
-
-  background-color: #DCE9FA;
-  /* overflow-y: hidden; */
-  
-}
 
 .StudentDash_sec2_wrap{
   position: relative;
@@ -100,3 +181,16 @@ width: 20rem;
   
 
 
+/* section one of StudentDash_sec4 start here */
+
+.StudentDash_sec4_wrap > div{
+  background-color: white;
+
+}
+
+.StudentDash_sec4 ul{
+  list-style-type: none;
+}
+
+  /* section one of StudentDash_sec4 end here */
+  

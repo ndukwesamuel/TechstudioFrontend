@@ -1,277 +1,116 @@
-.Employers_header{
-    background-color: white;
-}
 
 .Employers_wrapper{
     padding-bottom: 3rem;
 }
 
+.Employers_Talent{
+    padding-bottom: 3rem;
+}
 
-.Employers_wrapper_sec1_one{
-    text-align: center;
-    margin-top: 2rem;
+.Employers_Talent_wrapper > div >form{
+    padding: 2rem 1rem 0 1rem ;
 }
 
 
-.Employers_wrapper_sec1_one > h1{
-    color: #1F2666;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-
-.Employers_sec1_two_form{
-    padding: 3rem 0;
-
-}
-
-.Employers_sec1_two_form_inner{
-    margin: auto;
-    display: block;
-    width: 80%;
-    background-color: white;
-    padding: 2rem 1rem;
-    border-radius: 0.5rem;
-}
-
-.Employers_sec1_two_form input, .Employers_sec1_two_form button{
-    display: block;
-    margin: auto;
-    margin-top: 2rem;
-}
-
-.Employers_sec1_two_form button{
-    background-color: #0266F4;
-    color: white !important;
-    padding: 0.5rem 2rem;
-}
-
-
-.Employers_wrapper_sec1_two{
-    position: relative;
-    background-color: #DCE9FA;
-}
-
-.emploery_design{
-    width: 5rem;
-    position: absolute;
-    bottom:  -10%;
-    right: -1%;
-    transform: translate(-50%, -50%);
-
-}
-
-/* section two */
-.Employers2{
-    background-color:#F5F6FA ;
-    padding: 2rem 0;
-}
-
-
-.Employers2_wrap{
-    padding-top: 2rem;
-}
-
-.Employers2_wrap_h1 > span{
-    font-size: 1.25rem;
-}
-
-.Employers2_wrap_div_wrap_item{
-    background-color: white;
-    margin: auto;
-    width: 90%;
-    border-radius: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-}
-
-.Employers2_wrap_div_wrap_item p{
-  text-align: center;
-  padding: 0 1rem;
-}
-
-
-.Employers2_wrap_div_wrap_item_p1{
-    font-size: 1.313;
-    font-weight: bold;
+.Employers_Talent_wrapper form div  input{
     margin-top: 1rem;
 }
 
 
-.Employers2_wrap_div_wrap_item_p2{
-    font-size: 0.875rem;
-    font-weight: 400;
-    margin-top: 1rem;
-}
-
-.Employers2_wrap_div_wrap_item_img{
-    display: block;
-    width: 8rem;
-    margin-top: 1rem;
-    margin-left: 2rem;
-}
-
-
-/* section 3 */
-.Employers3_wrap_h1{
-    margin-top: 2rem;
-}
-.Employers3_wrap_h1 > span{
-    display: block;
-}
-.Employers3_wrap_div_wrap_item{
-    margin: 1rem 0;
-    text-align:  center;
-    padding: 1rem 0;
-}
-
-.Employers3_wrap_div_wrap_item_p1{
-    font-size: 1.313rem;
-    font-weight: bold;
-    margin-top: 1rem;
-}
-
-
-/* section 4 */
-.Employers_sec4{
-    background-color: #DCE9FA;
-    padding: 2rem 0;
-}
-
-div.Employers4_wrapper_sec1_one > h1{
-    margin: 1rem 0;
-    color: #1F2666;
-    font-size: 2.25rem;
-    font-weight: bolder;
-}
- div.Employers4_wrapper_sec1_one > p{
-     font-size: 1.125rem;
-     font-weight: 400;
- }
-
-.Employers4_sec1_two_form{
-    background-color: white;
-    /* border: 2px solid red; */
-    border-radius: 0.5rem;
-    padding: 2rem 1rem;
-}
-
-.Employers4_sec1_two_form_inner > input{
-margin-bottom: 2rem;
-}
-
-
-.Employers4_sec1_two_form_inner > button{
-    background-color: #0266F4;
-    color: white;
-    }
-    
 
 @media (min-width: 768px) {
 
-    .Employers2_wrap_div_wrap{
-        display: flex;
-        gap: 2rem;
-        margin-top: 3rem;
+    .Employers_Talent_wrapper > div{
+        flex: 6;
     }
 
-    .Employers2_wrap_h1 > span{
-        display: block;
-        margin-bottom: 2rem;
+    .Employers_Talent{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 
-    .Employers2_wrap_div_wrap_item{
-        height: 20rem;
+    .Employers_How_Techstudio_Works_Wrap > :nth-child(3) > div{
+        flex: 4;
     }
 
-    /* section3 */
-    .Employers3_wrap_div_wrap{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
+    .Employers_ListOf_Role > div{
+        width: 30%;
     }
-    .Employers3_wrap_div_wrap_item{
-        width: 32%;
-        padding: 1rem 0rem;
-        text-align: left;
 
+    .Employers_Help_Hire > div >div >div{
+        flex: 4;
     }
-    /* .Employers3_wrap_div_wrap_item{
 
+}
+
+
+@media (min-width: 992px) { 
+    
+    
+
+  
+    
+    .Employers_Talent_wrapper > :nth-child(2){
+            flex: 4;    }
+    
+}
+
+
+
+@media (min-width: 1200px) {
+
+    .Employers_Talent_wrapper > :nth-child(1){
+
+        width: 3rem;
+        flex: 6;
+       
+    }
+
+    .Employers_Talent_wrapper > :nth-child(1) > h1{
+
+        width: 70%;
+       
+    }
+    
+    .Employers_Talent_wrapper > :nth-child(1) > p{
+
+        width: 70%;
+       
+    }
+    
+    
+
+    .Employers_Help_Hire > div >div{
+        padding-top: 10rem !important
+    }
+
+    /* .Employers_Help_Hire_wrap >:first-child{
+        flex: 6;
     } */
 
-    /* section 4 */
-    .Employers4_wrapper{
-        display: flex;
-        gap: 2rem;
+
+    .Employers_Help_Hire_form > form {
+        width: 60%;
+        
     }
 
-    .Employers4_wrapper_sec1_one{
-        flex: 5;
-        margin-top: 3rem;
-    }
-
-    .Employers4_wrapper_sec1_two{
-        flex: 5;
-    }
- }
-@media (min-width: 992px) { 
-
-    .Employers_wrapper{
-        display: flex;
-        justify-content: space-between;
-        gap: 3rem;
-    }
-
-.Employers_wrapper_sec1_one{
-    flex: 5;
-}
 
 
-.Employers_wrapper_sec1_two{
-    flex: 7;
-}
-
-
-
-.emploery_design{
-    width: 7rem;
-    bottom:  -15%;
-    right: -10%;
-
-}
-
-
-.Employers_wrapper_sec1_one{
-    text-align: left;
-    margin-top: 5rem;
-}
-
-.Employers_sec1{
-    margin-top: 5rem;
-}
-
-/* section 3 */
-
-.Employers3_wrap_div_wrap{
-    gap: 1rem;
-}
-.Employers3_wrap_div_wrap_item{
-    width: 32%;
-
-}
  }
 
 
 
- @media (min-width: 1200px) {  
 
-    .Employers4_wrapper{
-        justify-content: center;
-        align-items: center;
-    }
-     .Employers4_sec1_two_form{
-         width: 27rem;
-     }
- }
+
+
+
+
+
+
+
+
+
+
+
+
+

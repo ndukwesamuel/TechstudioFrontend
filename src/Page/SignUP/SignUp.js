@@ -45,7 +45,7 @@ function SignUp() {
       <Navbar />
 
       <div className="container ">
-        <div className="login_wrapper">
+        <div className="login_wrapper py-5">
           <div>
             <Reg />
           </div>

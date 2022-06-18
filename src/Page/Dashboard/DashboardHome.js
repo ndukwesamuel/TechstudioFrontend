@@ -2,17 +2,15 @@ import React, { useEffect, useState } from "react";
 import DashHome from "../../Component/DashboardContainer/DashHome";
 import DNav from "../../Component/DashboardContainer/DNav";
 
+import "./DashboardHome.css";
 function DashboardHome() {
   return (
-    <div className="DashboardHome_main">
-      <div className="DashboardHome d-sm-flex DashboardHome_2">
-        <div className="">
-          <DNav />
-        </div>
+    // bgColor5
+    <div className="DashboardHome_main bgColor1 ">
+      <div className="DashboardHome d-sm-flex  ">
+        <DNav />
 
-        <div>
-          <DashHome />
-        </div>
+        <DashHome />
       </div>
     </div>
   );

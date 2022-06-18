@@ -26,8 +26,8 @@ function Login() {
     <section>
       <Navbar />
 
-      <div className="container ">
-        <div className="login_wrapper">
+      <div className="container-lg ">
+        <div className="login_wrapper py-5">
           <div>
             <Reg />
           </div>

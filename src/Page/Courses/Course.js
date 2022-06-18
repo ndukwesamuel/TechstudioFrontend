@@ -10,7 +10,7 @@ function Course() {
   return (
     <div>
       <Navbar />
-      <div className="container">
+      <div className="container-lg">
         <Dataset />
       </div>
 

@@ -1,0 +1,70 @@
+
+
+.ClassNav{
+    width: 50%;
+
+}
+
+.ClassNav > span:hover{
+    background-color: white;
+}
+
+
+.clockicon{
+width: 1rem;
+color: blue;
+}
+.classSchedule{
+    border-left-width: 0.2rem !important;
+}
+
+.Class_Assignments_wrap .add-file, .Class_Assignments_wrap .search-Assignment-icon{
+    width: 1rem;
+}
+
+.camera-icon{
+    width: 3rem;
+}
+
+@media (min-width: 576px) { 
+
+    
+.ClassNav{
+    width: 30%;
+
+}
+.classSchedule img{
+    border-radius: 50%;
+    width: 57px;
+    height: 57px;
+}
+
+.classSchedule >:nth-child(1){
+    width: 75%;
+}
+
+ }
+
+ @media (min-width: 992px) { 
+
+    .Class-content{
+        gap: 1rem;
+        height: 10rem;
+        
+    }
+ .classSchedule{
+    width: 55%;
+    border:  2px solid red;
+
+ }
+
+ 
+ .Class-content > :nth-child(2){
+    width: 45%;
+
+ }
+
+ .hhh{
+    height: 50%;
+ }
+ }

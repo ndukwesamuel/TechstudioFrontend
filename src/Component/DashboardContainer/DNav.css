@@ -1,10 +1,6 @@
 
   .DNav{
-    display: block;
-    background-color: #1F2666;
     width:  100vw;
-    padding-top: 2rem;
-    position: fixed;
     
   }
 
@@ -14,39 +10,18 @@
   }
 
 
-  .DNav_icon{
-    padding-bottom: 1rem;
-    padding-top: 0;
-    margin-top: -1rem;
-  }
 @media (min-width: 576px) { 
 
 
   .DNav{
-    display: block;
-    background-color: #1F2666;
     width: 6rem;
     height: 200vh;
-    padding-top: 2rem;
     position: static;
   }
 
-  .DNav_icon{
-    padding-top: 3rem;
-    gap: 2rem;
-  }
-
   
 
 
-
-
-  
-  .DNav_logo{
-    display: block;
-    margin: auto;
-    
-  }
   
   .tttt{
     position:fixed;
@@ -54,7 +29,15 @@
   }}
   
 
+  @media (min-width: 992px) { 
 
+    .DNav{
+      width: 4rem;
+      height: 200vh;
+      position: static;
+    }
+
+  }
 /* 
 // Small devices (landscape phones, 576px and up)
 

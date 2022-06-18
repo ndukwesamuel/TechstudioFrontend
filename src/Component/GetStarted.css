@@ -1,0 +1,68 @@
+
+
+
+
+
+
+@media (min-width: 768px) { 
+
+  .GetStarted{
+    width: 80%;
+    margin: auto;
+    border-radius: 1rem;
+    position: relative;
+    margin-top: 5rem;
+
+  }
+  
+
+  .GetStarted > :nth-child(2){
+    position: absolute;
+    bottom: 0;
+    right: -3rem;
+
+  }
+
+  .GetStarted > :nth-child(2) > img{
+width: 12rem;
+
+  }
+
+  .GetStarted >div{
+    width: 50%;
+  }
+
+  .GetStarted > :nth-last-child(1){
+    flex: 8;
+  }
+  .GetStarted > :nth-last-child(2){
+    flex: 4;
+  }
+
+
+
+
+
+
+
+}
+
+
+
+@media (min-width: 992px) {
+
+  .GetStarted{
+    width: 70%;
+  }
+
+  .GetStarted > :nth-child(2){
+    position: absolute;
+    bottom: 0;
+    right: -10rem;
+
+  }
+
+ }
+
+
+

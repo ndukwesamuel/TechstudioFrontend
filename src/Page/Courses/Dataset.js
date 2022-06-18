@@ -20,188 +20,54 @@ function Dataset({
   data_process_3,
 }) {
   return (
-    <section>
-      <div className="">
-        <section className="section_one">
-          <section className="section_one_wrapper">
-            <div className="section_one_wrapper_div1">
-              <h1> {data_head}</h1>
+    <section className="CourseType">
+      <section className="CourseTypeName text-center mt-4 d-md-flex gap1 text-md-start py-lg-5">
+        <div className=" pt-lg-5">
+          <h1 className="SemiBold Color1 font40px"> {data_head}</h1>
 
-              <p>{data_head_sub}</p>
-            </div>
-            <div className="section_one_wrapper_div2">
-              <div className="one">
-                <div>
-                  <img
-                    className="img-fluid section_one_wrapper_div2_img"
-                    src={data_img1}
-                    alt=""
-                  />{" "}
-                </div>
-              </div>
-            </div>
-          </section>
-        </section>
-
-        <section className="section_two">
-          <div className="section_two_wrapper">
-            <h1 className="section_two_wrapper_h1"> Our Process</h1>
-
-            <div className="section_two_wrapper_flex">
-              <div className="section_two_wrapper_flex_one">
-                <div className="section_two_wrapper_flex_one_div">
-                  <img
-                    className="img-fluid section_two_wrapper_flex_one_img "
-                    src={img1}
-                    alt=""
-                  />
-                  <div className="section_two_wrapper_flex_one_div2">01</div>
-                </div>
-
-                <p className="section_two_wrapper_flex_one_p">
-                  {data_process_1}
-                </p>
-              </div>
-
-              <div className="section_two_wrapper_flex_two">
-                <div className="section_two_wrapper_flex_two_div">
-                  <img
-                    className="img-fluid section_two_wrapper_flex_two_img "
-                    src={img2}
-                    alt=""
-                  />
-                  <div className="section_two_wrapper_flex_two_div2">02</div>
-                </div>
-
-                <p className="section_two_wrapper_flex_two_p">
-                  {data_process_2}
-                </p>
-              </div>
-
-              <div className="section_two_wrapper_flex_two">
-                <div className="section_two_wrapper_flex_two_div">
-                  <img
-                    className="img-fluid section_two_wrapper_flex_two_img "
-                    src={img3}
-                    alt=""
-                  />
-                  <div className="section_two_wrapper_flex_two_div2">03</div>
-                </div>
-
-                <p className="section_two_wrapper_flex_two_p">
-                  {data_process_3}
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div>
-          <GetStarted />
+          <p>{data_head_sub}</p>
         </div>
-        {/* 
-        <section className="Dataset_section_three">
-          <div className="Dataset_section_three_wrap">
-            <h1> What you will learn</h1>
+        <div className="">
+          <img className="img-fluid " src={data_img1} alt="" />{" "}
+        </div>
+      </section>
 
-            <div className="Dataset_learn_div_wrap">
-              <div className="Dataset_learn_div_wrap_divs one">
-                <div>
-                  <img className="img-fluid" src={z} alt="" />
-                  <p>Fundamentals</p>
-                </div>
+      <section className="CourseTypeProcess text-center py-5">
+        <div className="">
+          <h1 className=" pb-4"> Our Process</h1>
 
-                <p>
-                  The first phase of this bootcamp is to help you appreciate the
-                  fundamentals of web development, understanding structure,
-                  design and getting comfortable coding in HTML, CSS and Sass.
-                </p>
+          <div className="d-md-flex gap1">
+            <div className="">
+              <div className="CourseTypeProcess_Number position-relative">
+                <img className="img-fluid  " src={img1} alt="" />
+                <div className="position-absolute font32px text-light">01</div>
+              </div>
+              <p className="">{data_process_1}</p>
+            </div>
+
+            <div className="">
+              <div className="CourseTypeProcess_Number position-relative">
+                <img className="img-fluid  " src={img2} alt="" />
+                <div className="position-absolute font32px text-light">02</div>
               </div>
 
-              <div className="Dataset_learn_div_wrap_divs two">
-                <div>
-                  <img className="img-fluid" src={z} alt="" />
-                  <p>Using Boostrap</p>
-                </div>
+              <p className="">{data_process_2}</p>
+            </div>
 
-                <p>
-                  You’ll learn speedup your development and layout mobile-ready
-                  webpages using the most popular CSS Framework - Boostrap 4.
-                  You’ll understand how to automatically create responsive
-                  websites that render perfectly on all display platforms.
-                </p>
+            <div className="">
+              <div className="CourseTypeProcess_Number position-relative">
+                <img className="img-fluid  " src={img3} alt="" />
+                <div className="position-absolute font32px text-light">03</div>
               </div>
 
-              <div className="Dataset_learn_div_wrap_divs three">
-                <div>
-                  <img className="img-fluid" src={z} alt="" />
-                  <p>JavaScript Basics</p>
-                </div>
-
-                <p>
-                  You’ll learn speedup your development and layout mobile-ready
-                  webpages using the most popular CSS Framework - Boostrap 4.
-                  You’ll understand how to automatically create responsive
-                  websites that render perfectly on all display platforms.
-                </p>
-              </div>
-
-              <div className="Dataset_learn_div_wrap_divs four">
-                <div>
-                  <img className="img-fluid" src={z} alt="" />
-                  <p>JavaScript and the DOM</p>
-                </div>
-
-                <p>
-                  You’ll learn speedup your development and layout mobile-ready
-                  webpages using the most popular CSS Framework - Boostrap 4.
-                  You’ll understand how to automatically create responsive
-                  websites that render perfectly on all display platforms.
-                </p>
-              </div>
-
-              <div className="Dataset_learn_div_wrap_divs four">
-                <div>
-                  <img className="img-fluid" src={z} alt="" />
-                  <p>Object-Oriented JavaScript</p>
-                </div>
-
-                <p>
-                  You’ll learn to build real-life applications using
-                  object-oriented JavaScript techniques. You’ll also learn the
-                  major improvements of JavaScript in the form of ES6.
-                </p>
-              </div>
-
-              <div className="Dataset_learn_div_wrap_divs five">
-                <div>
-                  <img className="img-fluid" src={z} alt="" />
-                  <p>React Library</p>
-                </div>
-
-                <p>
-                  You’ll be introduced to the most popular JavaScript library -
-                  the REACT library. You’ll learn to build a React application
-                  from scratch, utilizing the react components to manage the
-                  user interface.
-                </p>
-              </div>
-
-              <div className="Dataset_learn_div_wrap_divs six">
-                <div>
-                  <img className="img-fluid" src={z} alt="" />
-                  <p>Developer Tools & Testing</p>
-                </div>
-
-                <p>
-                  You’ll be introduced to the Chrome Developers’ Tool and how to
-                  use it to debug and maintain your application. Learn to use
-                  testing to help build app features.
-                </p>
-              </div>
+              <p className="">{data_process_3}</p>
             </div>
           </div>
-        </section> */}
+        </div>
+      </section>
+
+      <div>
+        <GetStarted />
       </div>
     </section>
   );
