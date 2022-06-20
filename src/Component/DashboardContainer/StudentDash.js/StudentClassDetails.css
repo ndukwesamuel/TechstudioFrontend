@@ -1,0 +1,34 @@
+.StudentClassDetailsWrap{
+
+}
+
+
+.related-video{
+  width: 8rem;
+}
+
+
+.j{
+  border: 2px solid red;
+}
+.time-svg{
+  width: 1rem;
+  margin-top: -0.3rem;
+}
+
+
+@media (min-width: 768px) {  
+
+}
+
+
+@media (min-width: 992px  ) { 
+  /* .StudentClassDetails-mainVideo{
+    width: 70%;
+  }
+  .StudentClassDetails-relate{
+    width: 30%;
+  } */
+
+
+ }

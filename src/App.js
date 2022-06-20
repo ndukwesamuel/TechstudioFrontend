@@ -16,9 +16,9 @@ import Employers from "./Page/Employer/Employers";
 import Home from "./Page/Home";
 import Login from "./Page/Login/Login";
 import SignUp from "./Page/SignUP/SignUp";
-
-import "./App.css";
 import DashboardClass from "./Page/Dashboard/DashboardClass";
+import DashboardClassDetails from "./Page/Dashboard/DashboardClassDetails";
+import "./App.css";
 
 function App() {
   // const { user } = useGlobalContext();
@@ -44,6 +44,7 @@ function App() {
         <Route path="/DashboardHome" element={<DashboardHome />} />
         <Route path="/Dashboard_User" element={<DashboardUser />} />
         <Route path="/DashboardClass" element={<DashboardClass />} />
+        <Route path="/DashboardClass/:id" element={<DashboardClassDetails />} />
       </Routes>
     </BrowserRouter>
   );

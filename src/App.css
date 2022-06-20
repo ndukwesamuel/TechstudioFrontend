@@ -57,6 +57,7 @@ background-color: #0266F4;
 }
 
 .bgColor3{
+
   background-color:#1F2666;
   }
 
@@ -90,8 +91,6 @@ font-size: 62.5%;
 .font0-75rem{
   font-size: 0.75rem;
 }
-
-
 
 .font1rem{
   font-size: 1rem;
@@ -183,29 +182,31 @@ margin-bottom: 1rem;
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+
+  .gap-md-0{
+      gap: 0.5rem;
+  }
   .bgColor-md{
     background-color: #DCE9FA;
   }  
   
-
-
-  .bgColor1{
+  .bgColor-md-1{
   background-color:#F5F6FA;
   }
   
-  .bgColor2{
+  .bgColor-md-2{
   background-color: #0266F4;
   }
   
-  .bgColor3{
+  .bgColor-md-3{
     background-color:#1F2666;
     }
   
-    .bgColor4{
+  .bgColor-md-4{
       background-color:white;
       }
   
-      .bgColor5{
+  .bgColor-md-5{
         background-color: #F5F6FA;
         }
   
