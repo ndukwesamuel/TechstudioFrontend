@@ -29,31 +29,27 @@ function App() {
     (state) => state.auth
   );
 
-  if (!user)
-    return (
-      <BrowserRouter>
-        <Routes>
-          <Route exact path="/" element={<Login />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/frontend" element={<Frontend />} />
-          <Route path="/fullstack" element={<Fullstack />} />
-          <Route path="/datascience" element={<Datascience />} />
-          <Route path="/mobile" element={<Mobile />} />
-          <Route path="/employer" element={<Employers />} />
-          <Route path="/DashboardHome" element={<DashboardHome />} />
-          <Route path="/Dashboard_User" element={<DashboardUser />} />
-          <Route path="/DashboardClass" element={<DashboardClass />} />
-          <Route
-            path="/DashboardClass/:id"
-            element={<DashboardClassDetails />}
-          />
-        </Routes>
-        <ToastContainer />
-      </BrowserRouter>
-    );
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Login />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/frontend" element={<Frontend />} />
+        <Route path="/fullstack" element={<Fullstack />} />
+        <Route path="/datascience" element={<Datascience />} />
+        <Route path="/mobile" element={<Mobile />} />
+        <Route path="/employer" element={<Employers />} />
+        <Route path="/DashboardHome" element={<DashboardHome />} />
+        <Route path="/Dashboard_User" element={<DashboardUser />} />
+        <Route path="/DashboardClass" element={<DashboardClass />} />
+        <Route path="/DashboardClass/:id" element={<DashboardClassDetails />} />
+      </Routes>
+      <ToastContainer />
+    </BrowserRouter>
+  );
 }
 
 export default App;

@@ -5,13 +5,13 @@ import DNav from "../../Component/DashboardContainer/DNav";
 
 import "./DashboardHome.css";
 function DashboardHome() {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-  // const { user, isLoading, isError, isSuccess, message } = useSelector(
-  //   (state) => state.auth
-  // );
+  const { user, isLoading, isError, isSuccess, message } = useSelector(
+    (state) => state.auth
+  );
 
-  // console.log(user);
+  console.log(user);
   return (
     // bgColor5
     <div className="DashboardHome_main bgColor1 ">
