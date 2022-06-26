@@ -1,16 +1,23 @@
 import axios from "axios";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { useSelector, useDispatch } from "react-redux"; // this is becuse we want to call the global atate and use the reducer
+import { toast } from "react-toastify";
+
+import { register, reset } from "../../features/auth/authSlice";
+
 import { useNavigate } from "react-router-dom";
 import Footer from "../../Component/Footer/Footer";
 import Navbar from "../../Component/Navbar";
 import Reg from "../../Component/Reg";
-import { useGlobalContext } from "../../context/AuthContext";
 
 import "./signUp.css";
 
 function SignUp() {
-  const { urls } = useGlobalContext();
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const { user, isLoading, isError, isSuccess, message } = useSelector(
+    (state) => state.auth
+  );
 
   const first_name = useRef();
   const last_name = useRef();
@@ -25,20 +32,26 @@ function SignUp() {
     console.log(email.current.value);
     console.log(password.current.value);
     console.log(phoneNumber.current.value);
-    const user = {
+    const userData = {
       email: email.current.value,
       password: password.current.value,
       first_name: first_name.current.value,
       phoneNumber: phoneNumber.current.value,
       last_name: last_name.current.value,
     };
-    try {
-      await axios.post(`${urls}/auth/register`, user);
-      navigate("/login");
-    } catch (err) {
-      console.log(err);
-    }
+
+    dispatch(register(userData));
   };
+
+  useEffect(() => {
+    if (isError) {
+      toast.error(message);
+    }
+    if (isSuccess || user) {
+      navigate("/login");
+    }
+    dispatch(reset());
+  }, [user, isError, isSuccess, message, navigate, dispatch]);
 
   return (
     <section>
@@ -91,7 +104,6 @@ function SignUp() {
                       ref={phoneNumber}
                     />
                   </div>
-
                   <div>
                     <label htmlFor="">Time Schedule</label>
                     <select

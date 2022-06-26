@@ -16,19 +16,36 @@
   margin-top: -0.3rem;
 }
 
+.user-comment-icon{
+  width: 2.688rem;
+  height: 2.688rem;
+}
+
 
 @media (min-width: 768px) {  
+
 
 }
 
 
 @media (min-width: 992px  ) { 
-  /* .StudentClassDetails-mainVideo{
+
+
+  
+  .StudentClassDetails_Resource{
+    flex: 8;
+  }
+
+  .StudentClassDetails-sub-assignment{
+    flex: 4;
+  }
+
+  .StudentClassDetails-mainVideo{
+  }
+
+
+  .StudentClassDetails-discussions,.StudentClassDetails-about{
     width: 70%;
   }
-  .StudentClassDetails-relate{
-    width: 30%;
-  } */
-
 
  }

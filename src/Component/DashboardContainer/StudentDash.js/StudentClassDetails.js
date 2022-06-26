@@ -122,7 +122,7 @@ function StudentClassDetails() {
           </div>
         </div>
 
-        <div className="d-flex gap1 ps-2 mt-5">
+        <div className="d-flex gap1 ps-2 mt-5 ps-lg-5">
           <p className="Regular font1rem" onClick={handleAboutCourse}>
             About Course
           </p>
@@ -136,7 +136,7 @@ function StudentClassDetails() {
 
         <div className="">
           {about && (
-            <div className="text-start ps-2 px-sm-3 ">
+            <div className="text-start ps-2 px-sm-3 StudentClassDetails-about">
               <h2 className="font22px ">About Course </h2>
               <p>
                 Dream of finally finishing that draft or launching that
@@ -155,8 +155,73 @@ function StudentClassDetails() {
           )}
 
           {discussions && (
-            <div className="text-start ps-2 px-sm-3 ">
-              <div>
+            <div className="text-start ps-2 px-sm-3 StudentClassDetails-discussions ps-lg-5">
+              <h2 className="font22px ">Discussions </h2>
+
+              <div className="d-flex align-items-center ">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6 user-comment-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <textarea
+                  name=""
+                  id=""
+                  className="form-control me-2"
+                ></textarea>
+              </div>
+
+              <div className="d-flex mt-3">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6 user-comment-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+
+                <div className="pe-3">
+                  <p className="Bold mt-2">Emerald B.</p>
+                  <p>
+                    So, where can I practise doing the name card? Is it Adobe
+                    Illustrator? My trial has ended. Any other recommended
+                    platform for practising?
+                  </p>
+
+                  <textarea
+                    name=""
+                    id=""
+                    className="form-control "
+                    placeholder="Leave a reply"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {resources && (
+            <div className="text-start ps-2 px-sm-3  d-lg-flex">
+              <div className="StudentClassDetails_Resource">
                 <h2 className="font22px ">Project Description </h2>
                 <p>Redesign your business card</p>
 
@@ -187,7 +252,8 @@ function StudentClassDetails() {
                 </div>
               </div>
 
-              <div className="mt-3">
+              <div className="mt-3 StudentClassDetails-sub-assignment">
+                <p className="Bold font22px">Resources</p>
                 <div className="StudentResource_Download d-flex  justify-content-between  ">
                   <p className="">
                     <span>
@@ -228,6 +294,8 @@ function StudentClassDetails() {
                     Download
                   </p>
                 </div>
+
+                <button className="btn btn-primary">Submit Assignment</button>
                 {/* end */}
               </div>
             </div>

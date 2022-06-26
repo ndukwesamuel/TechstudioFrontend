@@ -1,25 +1,46 @@
-import React, { useRef } from "react";
-import { Link } from "react-router-dom";
-import { loginCall } from "../../apiCalls";
+import React, { useEffect, useRef } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import Footer from "../../Component/Footer/Footer";
 import Navbar from "../../Component/Navbar";
+import { useSelector, useDispatch } from "react-redux";
+
 import Reg from "../../Component/Reg";
-import { useGlobalContext } from "../../context/AuthContext";
+import { login, reset } from "../../features/auth/authSlice";
 
 import "./login.css";
+import { toast } from "react-toastify";
 
 function Login() {
-  const { urls, dispatch, isFetching } = useGlobalContext();
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const { user, isLoading, isError, isSuccess, message } = useSelector(
+    (state) => state.auth
+  );
+
+  useEffect(() => {
+    if (isError) {
+      toast.error(message);
+    }
+
+    if (isSuccess || user) {
+      navigate("/DashboardHome");
+    }
+    dispatch(reset());
+  }, [user, isError, isSuccess, message, navigate, dispatch]);
 
   const email = useRef();
   const password = useRef();
   const handleClick = (e) => {
     e.preventDefault();
 
-    loginCall(
-      { email: email.current.value, password: password.current.value },
-      dispatch
-    );
+    const userData = {
+      email: email.current.value,
+      password: password.current.value,
+    };
+
+    console.log(userData);
+    dispatch(login(userData));
   };
 
   return (

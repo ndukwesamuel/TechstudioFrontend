@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import { useGlobalContext } from "../context/AuthContext";
 import {
   Link,
   Navigate,
@@ -7,24 +6,37 @@ import {
   useNavigate,
 } from "react-router-dom";
 import "./Navbar.css";
+import { useSelector, useDispatch } from "react-redux"; // this is becuse we want to call the global atate and use the reducer
+
+import { logout, reset } from "../features/auth/authSlice";
 
 let data = "nav-link  ";
 
 const Navbar = ({ white_nav }) => {
-  const { logoutndler, user } = useGlobalContext();
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const { user, isLoading, isError, isSuccess, message } = useSelector(
+    (state) => state.auth
+  );
 
-  console.log(logoutndler);
+  // const oncc = () => {
+  //   localStorage.removeItem("user");
+  //   window.location.reload();
+  // };
 
-  const oncc = () => {
-    localStorage.removeItem("user");
-    window.location.reload();
+  const onLogout = () => {
+    // localStorage.removeItem("user");
+    dispatch(logout());
+    dispatch(reset());
+    navigate("/");
   };
-  // useEffect(() => {
-  //   oncc();
+  useEffect(() => {
+    if (!user) {
+      navigate("/login");
+    }
 
-  //   return () => {};
-  // }, []);
+    return () => {};
+  }, []);
 
   return (
     <div className="container">
@@ -127,7 +139,7 @@ const Navbar = ({ white_nav }) => {
 
             <div className="d-flex  ">
               {user ? (
-                <button className=" btn btn-primary" onClick={oncc}>
+                <button className=" btn btn-primary" onClick={onLogout}>
                   logout
                 </button>
               ) : (
