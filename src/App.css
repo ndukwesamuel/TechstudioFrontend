@@ -36,6 +36,9 @@
   font-family: 'Rubik', sans-serif;
 }
 
+.w1{
+  width: 1rem;
+}
 
 
 :root {
@@ -51,6 +54,9 @@
 .bgColor1{
 background-color:#F5F6FA;
 }
+
+
+
 
 .bgColor2{
 background-color: #0266F4;
@@ -78,10 +84,15 @@ background-color: #0266F4;
           background-color: #1F266633;
         }
     
+        .bgColor8{
+          background-color: #DBEBFF;
+        }
+        
 
 /* html{
 font-size: 62.5%;
 } */
+
 
 .font0rem{
   font-size: 0.5rem;
@@ -92,6 +103,9 @@ font-size: 62.5%;
   font-size: 0.75rem;
 }
 
+.font-14px{
+  font-size: 0.875rem;
+}
 .font1rem{
   font-size: 1rem;
 }
@@ -210,5 +224,38 @@ margin-bottom: 1rem;
         background-color: #F5F6FA;
         }
   
+        .width-md-50{
+          width: 50%;
+        }
+        
+        .width-md-75{
+          width: 75%;
+        }
+
+        .width-md-85{
+          width: 85%;
+        }
+        
 
  }
+
+
+
+@media (min-width: 992px) { 
+  .width-lg-50{
+    width: 50%;
+  }
+  
+  .width-lg-75{
+    width: 75%;
+  }
+
+  .width-lg-85{
+    width: 85%;
+  }
+
+  .width-lg{
+    width: 100%;
+  }
+  
+}

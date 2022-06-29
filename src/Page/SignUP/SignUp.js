@@ -1,5 +1,4 @@
-import axios from "axios";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux"; // this is becuse we want to call the global atate and use the reducer
 import { toast } from "react-toastify";
 
@@ -15,7 +14,7 @@ import "./signUp.css";
 function SignUp() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const { user, isLoading, isError, isSuccess, message } = useSelector(
+  const { user,  isError, isSuccess, message } = useSelector(
     (state) => state.auth
   );
 
@@ -47,7 +46,7 @@ function SignUp() {
     if (isError) {
       toast.error(message);
     }
-    if (isSuccess || user) {
+    if (isSuccess) {
       navigate("/login");
     }
     dispatch(reset());

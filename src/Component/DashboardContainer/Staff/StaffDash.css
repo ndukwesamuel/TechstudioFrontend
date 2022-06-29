@@ -1,0 +1,196 @@
+
+/* section one of StudentDash_sec1 start here */
+
+
+.StudentDash_SearchTask{
+  width: 18rem;
+}
+
+.StudentTaskBoard_wrap{
+
+}
+
+.StudentTaskBoard_wrap >div{
+  width: 47%;
+  border-radius: 0.5rem;
+}
+.StudentTaskBoard_wrap p{
+  margin-bottom: 0;
+}
+
+
+.StudentResource_Chart_Nav > button{
+  width: 4rem;
+
+}
+
+.StudentResource_Chart_Nav{
+  width: 50%;
+}
+
+.StudentResource_Chart_Nav > span:hover{
+  background-color: white;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.StudentResource_Chart_icon{
+  width: 1rem;
+  color: red;
+}
+
+.Download_icon{
+  width: 1rem;
+  color: blue;
+}
+
+.StudentResource_Download p{
+  font-size: 0.8rem;
+}
+
+/* .StudentResource_Tutor_FeedBack >:nth-child(1){
+  width: 60%;
+} */
+
+
+.StudentResource_Tutor_FeedBack img{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid grey;
+
+
+}
+
+
+
+@media (min-width: 768px) { 
+
+
+
+  .StudentTaskBoard_wrap >div{
+    width: 23%;
+  }
+
+  .StudentIntro_wrap > :nth-child(1){
+    width: 20rem;
+  }
+
+
+  .StudentIntro_wrap > :nth-child(2) img{
+    position: absolute;
+    bottom: -3rem;
+    right: 0;
+    width: 15rem;
+  } 
+
+  .StudentResource_Chart >:nth-child(1){
+    width:50%;
+    border:  2px solid red;
+  }
+  .StudentResource_Chart >:nth-child(2){
+    width:50%;
+    border:  2px solid red;
+  }
+
+ }
+
+/* section one of StudentDash_sec1 end here */
+
+
+
+/* section one of StudentDash_sec2 start here */
+
+
+.StudentDash_sec2_wrap{
+  position: relative;
+  padding: 2rem 0;
+  padding-left: 1rem;
+}
+
+.StudentDash_sec2{
+  margin-top: 3rem;
+}
+
+.StudentDash_sec2_wrap img{
+  width: 13rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+.StudentDash_sec2_wrap h1{
+  font-size: 2rem;
+  color: #1F2666;
+
+}
+
+.StudentDash_sec2_wrap p {
+  font-size: 1rem;
+  width: 60%;
+  color: #1F2666;
+}
+
+
+/* section one of StudentDash_sec2 end here */
+
+
+
+/* section one of StudentDash_sec3 start here */
+.StudentDash_sec3{
+  margin-top: 3rem;
+}
+.StudentDash_sec3_wrap{
+  gap: 1rem;
+}
+
+.StudentDash_sec3_wrap > div{
+  background-color: white;
+  flex: 2;
+  gap: 1rem;
+
+  padding: 2rem 0.3rem  2rem 0.3rem;
+
+}
+
+
+.StudentDash_sec3_wrap_img_div{
+}
+
+.StudentDash_sec3_wrap > div img{
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.StudentDash_sec3_wrap > div p{
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.StudentDash_sec3_wrap > div p:first-child{
+  font-family: 'Rubik', sans-serif;
+  color: green;
+
+}
+
+
+  
+  /* section one of StudentDash_sec3 end here */
+  
+  
+
+
+/* section one of StudentDash_sec4 start here */
+
+.StudentDash_sec4_wrap > div{
+  background-color: white;
+
+}
+
+.StudentDash_sec4 ul{
+  list-style-type: none;
+}
+
+  /* section one of StudentDash_sec4 end here */
+  

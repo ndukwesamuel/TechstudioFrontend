@@ -29,11 +29,13 @@ const Navbar = ({ white_nav }) => {
     dispatch(logout());
     dispatch(reset());
     navigate("/");
+
+    // localStorage.removeItem("user");
   };
   useEffect(() => {
-    if (!user) {
-      navigate("/login");
-    }
+    // if (!user) {
+    //   navigate("/login");
+    // }
 
     return () => {};
   }, []);

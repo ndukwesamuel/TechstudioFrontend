@@ -1,11 +1,11 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
-import { useSelector, useDispatch } from "react-redux"; // this is becuse we want to call the global atate and use the reducer
+import { useSelector } from "react-redux"; // this is becuse we want to call the global atate and use the reducer
 
 import About from "./Page/About";
 import Contact from "./Page/Contact/Contact";
-import Course from "./Page/Courses/Course";
+// import Course from "./Page/Courses/Course";
 import Datascience from "./Page/Courses/Datascience";
 import Frontend from "./Page/Courses/Frontend";
 import Fullstack from "./Page/Courses/Fullstack";
@@ -32,7 +32,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Login />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<SignUp />} />
@@ -42,7 +42,10 @@ function App() {
         <Route path="/datascience" element={<Datascience />} />
         <Route path="/mobile" element={<Mobile />} />
         <Route path="/employer" element={<Employers />} />
-        <Route path="/DashboardHome" element={<DashboardHome />} />
+        <Route
+          path="/DashboardHome"
+          element={user ? <DashboardHome /> : <Login />}
+        />
         <Route path="/Dashboard_User" element={<DashboardUser />} />
         <Route path="/DashboardClass" element={<DashboardClass />} />
         <Route path="/DashboardClass/:id" element={<DashboardClassDetails />} />
