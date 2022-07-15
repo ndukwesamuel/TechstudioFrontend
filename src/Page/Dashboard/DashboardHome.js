@@ -11,7 +11,7 @@ function DashboardHome() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const { user, isStaff } = useSelector((state) => state.auth);
+  const { user, isStaff, Admin } = useSelector((state) => state.auth);
 
   const { userinfo, isError, message } = useSelector((state) => state.userinfo);
   console.log(userinfo);
@@ -21,10 +21,11 @@ function DashboardHome() {
       console.log(message);
     }
 
-    // if (isStaff === true) {
-    //   navigate("/Dashboard_User");
-    // }
     dispatch(getUser(user._id));
+
+    if (isStaff) {
+      navigate("/Dashboard_User");
+    }
 
     return () => {
       dispatch(reset());

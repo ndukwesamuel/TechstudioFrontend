@@ -6,7 +6,7 @@ import StudentClass from "../../Component/DashboardContainer/StudentDash.js/Stud
 import "./DashboardClass.css";
 
 function DashboardClass() {
-  const { user, isStaff } = useSelector((state) => state.auth);
+  const { user, isStaff, Admin } = useSelector((state) => state.auth);
 
   return (
     <div className="DashboardHome_main bgColor1 ">

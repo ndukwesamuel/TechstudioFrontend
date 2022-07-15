@@ -16,7 +16,7 @@
   --main-color: hotpink;
   --pane-padding: 5px 42px;
   --Semibold: 600;
-}`
+}
 
 
 
@@ -34,6 +34,17 @@
 
 .RubikFont{
   font-family: 'Rubik', sans-serif;
+}
+
+
+.OpenSans{
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+
+
+border-none{
+  border: none !important;
 }
 
 .w1{
@@ -192,6 +203,11 @@ margin-bottom: 1rem;
 }
 
 
+.width{
+  width: 100%;
+}
+
+
 
 
 /* // Medium devices (tablets, 768px and up) */
@@ -200,6 +216,10 @@ margin-bottom: 1rem;
   .gap-md-0{
       gap: 0.5rem;
   }
+
+  .gap-md-2{
+    gap: 2rem;
+}
   .bgColor-md{
     background-color: #DCE9FA;
   }  
@@ -259,3 +279,48 @@ margin-bottom: 1rem;
   }
   
 }
+
+
+
+@media (min-width: 1200px) { 
+
+
+  
+  .width-x-50{
+    width: 50%;
+  }
+  
+  .width-x-75{
+    width: 75%;
+  }
+
+  .width-x-85{
+    width: 85%;
+  }
+
+  .width-x{
+    width: 100%;
+  }
+
+ }
+
+
+@media (min-width: 1400px) { 
+
+  .width-xx-50{
+    width: 50%;
+  }
+  
+  .width-xx-75{
+    width: 75%;
+  }
+
+  .width-xx-85{
+    width: 85%;
+  }
+
+  .width-xx{
+    width: 100%;
+  }
+
+ }

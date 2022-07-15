@@ -22,7 +22,6 @@ function Home() {
   };
   useEffect(() => {
     data();
-
     return () => {};
   }, []);
 
@@ -32,6 +31,7 @@ function Home() {
         <Navbar />
         <div className="HomeComponentSectionOneFlex  d-flex container flex-column-reverse pb-5 text-center flex-lg-row text-lg-start  align-items-md-center  justify-content-lg-around">
           <div className="HomeComponentSectionOne-side1 ">
+            <pre>{process.env.REACT_APP_URL}</pre>
             <p className="font44px ">Your Dream Tech Career Starts Here </p>
             <p className="">
               Stutern offers graduates a path to a fulfilling career through job

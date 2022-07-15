@@ -61,6 +61,19 @@
 
 }
 
+.test{
+  top:  20rem !;
+
+}
+
+.modal.fade.test{
+  background-color: red !important;
+}
+
+.cry{
+  border: 2px solid red !important;
+}
+
 
 
 @media (min-width: 768px) { 

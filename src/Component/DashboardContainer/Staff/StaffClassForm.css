@@ -1,0 +1,83 @@
+.start-class-title{
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+  
+  
+  
+  
+  }
+  
+  .start-class-title > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: -0.7rem;
+    top: 1.5rem;
+    border: 2px solid white;
+  
+  }
+  
+  .lesson-joined-user{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  
+  }
+  
+  .staff-shedule-class-participants > img{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+  }
+  
+  
+  .staff-shedule-class-participants >:nth-child(2), .staff-shedule-class-participants >:nth-child(3){
+    margin-left: -0.5rem;
+  
+  }
+  
+  
+  
+  @media (min-width: 992px) { 
+  
+  .schedule-lesson >:nth-child(1){
+    flex: 7;
+  
+  }
+  .schedule-lesson >:nth-child(2){
+    flex: 5;
+  
+  }
+  
+  .start-class-title > img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    left: -1rem;
+    top: 2rem;
+    border: 2px solid white;
+  
+  }
+  
+  .staff-shedule-class-participants > img{
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+  }
+  }
+  
+  
+  @media (min-width: 1200px) { 
+  
+    .schedule-lesson >:nth-child(1){
+      flex: 8.5;
+    
+    }
+    .schedule-lesson >:nth-child(2){
+      flex: 4;
+    
+    }
+  
+  
+   }

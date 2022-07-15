@@ -2,12 +2,8 @@
 
 .ClassNav{
     width: 50%;
-
 }
 
-.ClassNav > span:hover{
-    background-color: white;
-}
 
 
 .clockicon{
@@ -25,6 +21,20 @@ color: blue;
 .camera-icon{
     width: 3rem;
 }
+
+.Class_Assignments_offcanva  {
+    border: 1px dashed red !important;
+
+}
+
+.yy{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 2rem;
+}
+
+
 
 @media (min-width: 576px) { 
 

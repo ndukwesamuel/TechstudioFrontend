@@ -1,0 +1,37 @@
+/* .StudentAside__{
+
+  height: 20rem;
+
+}
+
+
+.schedule-class{
+  margin-top: 3rem;
+} */
+
+
+
+@media (min-width: 768px) {.StudentAside__shedulclass{
+  width: 50%;
+}
+
+.StudentAside__Calnender{
+  width: 50%;
+} }
+
+
+@media (min-width: 992px)  {.StudentAside__shedulclass{
+  width: 100%;
+}
+
+.StudentAside__Calnender{
+  width: 100%;
+}
+
+.StudentAside__shedulclass{
+  margin-top: 8rem;
+}
+
+
+
+}

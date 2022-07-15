@@ -19,19 +19,7 @@
 }
 
 
-.StudentResource_Chart_Nav > button{
-  width: 4rem;
 
-}
-
-.StudentResource_Chart_Nav{
-  width: 50%;
-}
-
-.StudentResource_Chart_Nav > span:hover{
-  background-color: white;
-  padding: 0 0.5rem 0 0.5rem;
-}
 
 .StudentResource_Chart_icon{
   width: 1rem;
@@ -85,11 +73,9 @@
 
   .StudentResource_Chart >:nth-child(1){
     width:50%;
-    border:  2px solid red;
   }
   .StudentResource_Chart >:nth-child(2){
     width:50%;
-    border:  2px solid red;
   }
 
  }

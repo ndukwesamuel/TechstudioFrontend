@@ -122,22 +122,29 @@ function StudentClassDetails() {
           </div>
         </div>
 
-        <div className="d-flex gap1 ps-2 mt-5 ps-lg-5">
-          <p className="Regular font1rem" onClick={handleAboutCourse}>
+        <div className="d-flex mt-5 text-start ps-2 flex-sm-row justify-content-around Admin-stack-nav ms-md-2 mt-md-5 ps-md-0">
+          <span
+            className="me-md-2 Regular font1rem"
+            onClick={handleAboutCourse}
+          >
             About Course
-          </p>
-          <p className="Regular font1rem" onClick={handleDiscussions}>
+          </span>
+          <span
+            className="me-md-2 Regular font1rem"
+            onClick={handleDiscussions}
+          >
             Discussions
-          </p>
-          <p className="Regular font1rem" onClick={handleResources}>
+          </span>
+          <span className="me-md-2 Regular font1rem" onClick={handleResources}>
             Resources
-          </p>
+          </span>
         </div>
+        <hr className="my-0" />
 
         <div className="">
           {about && (
             <div className="text-start ps-2 px-sm-3 StudentClassDetails-about">
-              <h2 className="font22px ">About Course </h2>
+              <h2 className="font22px mt-5 ">About Course </h2>
               <p>
                 Dream of finally finishing that draft or launching that
                 side-hustle? Make your next creative project your best yet, with
@@ -295,7 +302,68 @@ function StudentClassDetails() {
                   </p>
                 </div>
 
-                <button className="btn btn-primary">Submit Assignment</button>
+                <button
+                  className="btn btn-primary"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasExample"
+                  aria-controls="offcanvasExample"
+                >
+                  Submit Assignment
+                </button>
+
+                <div className="Class_Assignments_offcanva">
+                  <div
+                    class="offcanvas offcanvas-end "
+                    tabindex="-1"
+                    id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel"
+                  >
+                    <div class="offcanvas-header">
+                      <h5
+                        class="offcanvas-title text-dark Bold font18px"
+                        id="offcanvasExampleLabel"
+                      >
+                        Submit Assignment
+                      </h5>
+
+                      <button
+                        type="button"
+                        class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div className="text-dark ">
+                        <p className="SemiBold">Fundamentals of Design</p>
+                        <p className="Regular">Description</p>
+                        <div>
+                          <textarea
+                            class="form-control "
+                            placeholder="Leave a comment here"
+                            id="floatingTextarea"
+                          ></textarea>
+                        </div>
+                        <div>
+                          <p> Attachments</p>
+                          <div>
+                            Browse files or drag and drop here{" "}
+                            <button className="btn btn-primary">Addfile</button>
+                          </div>
+
+                          <div className="yy">
+                            <button className="btn btn-primary me-3">
+                              {" "}
+                              Submit
+                            </button>
+                            <button className="btn btn-light"> Cancle</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 {/* end */}
               </div>
             </div>

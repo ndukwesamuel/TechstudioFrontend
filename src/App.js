@@ -22,6 +22,9 @@ import DashboardClassDetails from "./Page/Dashboard/DashboardClassDetails";
 import "react-toastify/dist/ReactToastify.css";
 
 import "./App.css";
+import AdminHome from "./Component/DashboardContainer/Admin/AdminHome";
+import DashboardClassLive from "./Page/Dashboard/DashboardClassLive";
+import DashboardClassForm from "./Page/Dashboard/DashboardClassForm";
 
 function App() {
   // const { user } = useGlobalContext();
@@ -39,15 +42,23 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/frontend" element={<Frontend />} />
         <Route path="/fullstack" element={<Fullstack />} />
+        <Route path="/uiux" element={<Uiux />} />
         <Route path="/datascience" element={<Datascience />} />
         <Route path="/mobile" element={<Mobile />} />
         <Route path="/employer" element={<Employers />} />
+
+        {/* user dashborder start here */}
         <Route
           path="/DashboardHome"
           element={user ? <DashboardHome /> : <Login />}
         />
+
         <Route path="/Dashboard_User" element={<DashboardUser />} />
         <Route path="/DashboardClass" element={<DashboardClass />} />
+        <Route path="/DashboardClassForm" element={<DashboardClassForm />} />
+
+        <Route path="/DashboardClassLive" element={<DashboardClassLive />} />
+
         <Route path="/DashboardClass/:id" element={<DashboardClassDetails />} />
       </Routes>
       <ToastContainer />

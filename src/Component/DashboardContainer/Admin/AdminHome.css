@@ -1,0 +1,58 @@
+/* .Admin-stack-nav{
+    border-bottom: 1px solid blue;
+
+} */
+
+
+
+.Admin-stack-nav >span:hover{
+    border-bottom: 2px solid blue;
+
+}
+
+
+
+
+@media (min-width: 768px) { 
+
+    .AdminHome-class-btn > button{
+        font-size: 0.63rem !important;
+
+    }
+
+    .Admin-stack-nav {
+        width: 70%;
+    }
+
+ }
+
+
+ @media (min-width: 992px) { 
+
+    .AdminHome-class-btn > button{
+        font-size: 0.5rem !important;
+        font-weight: bold;
+
+    }
+
+    .Admin-stack-nav {
+        width: 70%;
+    }
+
+
+    .AdminHome_Resource_Chart >:nth-child(3){
+        /* border: 2px solid green; */
+        width: 40%;
+    }
+
+    .StudentDash_userprofile{
+        width: 40%;
+    }
+
+
+    .AdminHome_Resource_Chart {
+
+    }
+
+ }
+

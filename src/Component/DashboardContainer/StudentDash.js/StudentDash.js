@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import img1 from "../../../media/Group 25128.png";
 import img4 from "../../../media/Icon awesome-folder-plus.png";
@@ -15,6 +15,27 @@ let tutor_img =
 // import pdf from "../Others/PdfIcon";
 
 function StudentDash() {
+  const [nav3, setNav3] = useState(false);
+  const [nav1, setNav1] = useState(true);
+  const [nav2, setNav2] = useState(false);
+
+  const activeNav1 = () => {
+    setNav1(true);
+    setNav2(false);
+    setNav3(false);
+  };
+
+  const activeNav2 = () => {
+    setNav1(false);
+    setNav2(true);
+    setNav3(false);
+  };
+
+  const activeNav3 = () => {
+    setNav1(false);
+    setNav2(false);
+    setNav3(true);
+  };
   return (
     <div className="StudentDash pt-5">
       <section className="d-md-flex  ms-md-2 justify-content-md-between ">
@@ -62,7 +83,7 @@ function StudentDash() {
               <img className="img-fluid" src={img3} alt="" />
             </div>
             <div>
-              <p> Total Task</p>
+              <p> Pending Tasks</p>
               <p> 24</p>
             </div>
           </div>
@@ -72,7 +93,7 @@ function StudentDash() {
               <img className="img-fluid" src={img4} alt="" />
             </div>
             <div>
-              <p> Total Task</p>
+              <p> Tasks submitted</p>
               <p> 24</p>
             </div>
           </div>
@@ -82,7 +103,7 @@ function StudentDash() {
               <img className="img-fluid" src={img5} alt="" />
             </div>{" "}
             <div>
-              <p> Total Task</p>
+              <p> Weeks Remaining</p>
               <p> 24</p>
             </div>
           </div>
@@ -93,223 +114,244 @@ function StudentDash() {
         <div className="bgColor4 text-start px-3 py-3">
           <h1 className="font18px SemiBold">Resources</h1>
 
-          <div className="StudentResource_Chart_Nav d-flex bgColor6 gap1 ps-2">
-            <span className="SemiBold font1rem">PDF</span>
-            <span className="SemiBold font1rem"> VIDEO</span>
-            <span className="SemiBold font1rem">AUDIO</span>
+          <div className="StudentResource_Chart_Nav p-1  width-75 d-flex bgColor6 gap1 align-items-center justify-content-center">
+            <span
+              className={nav1 ? "btn btn-light w-50" : " "}
+              onClick={activeNav1}
+            >
+              PDF
+            </span>
+
+            <span
+              className={nav2 ? "btn btn-light w-50" : " "}
+              onClick={activeNav2}
+            >
+              VIDEO
+            </span>
+
+            <span
+              className={nav3 ? "btn btn-light w-50" : " "}
+              onClick={activeNav3}
+            >
+              AUDIO
+            </span>
           </div>
 
-          <div className="mt-3">
-            <div className="StudentResource_Download d-flex  justify-content-between  ">
-              <p className="">
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 StudentResource_Chart_icon"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-                    />
-                  </svg>
-                </span>
-                <span className=""> Design and Insights.pdf</span>
-              </p>
-              <p className="Regular ">
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 Download_icon"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                    />
-                  </svg>
-                </span>
-                Download
-              </p>
-            </div>
-            {/* end */}
+          {nav1 ? (
+            <div className="mt-3">
+              <div className="StudentResource_Download d-flex  justify-content-between  ">
+                <p className="">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 StudentResource_Chart_icon"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </span>
+                  <span className=""> Design and Insights.pdf</span>
+                </p>
+                <p className="Regular ">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 Download_icon"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                      />
+                    </svg>
+                  </span>
+                  Download
+                </p>
+              </div>
+              {/* end */}
 
-            <div className="StudentResource_Download d-flex  justify-content-between  ">
-              <p className="">
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 StudentResource_Chart_icon"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-                    />
-                  </svg>
-                </span>
-                <span className=""> Design and Insights.pdf</span>
-              </p>
-              <p className="Regular ">
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 Download_icon"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                    />
-                  </svg>
-                </span>
-                Download
-              </p>
-            </div>
-            {/* end */}
+              <div className="StudentResource_Download d-flex  justify-content-between  ">
+                <p className="">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 StudentResource_Chart_icon"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </span>
+                  <span className=""> Design and Insights.pdf</span>
+                </p>
+                <p className="Regular ">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 Download_icon"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                      />
+                    </svg>
+                  </span>
+                  Download
+                </p>
+              </div>
+              {/* end */}
 
-            <div className="StudentResource_Download d-flex  justify-content-between  ">
-              <p className="">
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 StudentResource_Chart_icon"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-                    />
-                  </svg>
-                </span>
-                <span className=""> Design and Insights.pdf</span>
-              </p>
-              <p className="Regular ">
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 Download_icon"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                    />
-                  </svg>
-                </span>
-                Download
-              </p>
-            </div>
-            {/* end */}
+              <div className="StudentResource_Download d-flex  justify-content-between  ">
+                <p className="">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 StudentResource_Chart_icon"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </span>
+                  <span className=""> Design and Insights.pdf</span>
+                </p>
+                <p className="Regular ">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 Download_icon"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                      />
+                    </svg>
+                  </span>
+                  Download
+                </p>
+              </div>
+              {/* end */}
 
-            <div className="StudentResource_Download d-flex  justify-content-between  ">
-              <p className="">
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 StudentResource_Chart_icon"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-                    />
-                  </svg>
-                </span>
-                <span className=""> Design and Insights.pdf</span>
-              </p>
-              <p className="Regular ">
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 Download_icon"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                    />
-                  </svg>
-                </span>
-                Download
-              </p>
-            </div>
-            {/* end */}
+              <div className="StudentResource_Download d-flex  justify-content-between  ">
+                <p className="">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 StudentResource_Chart_icon"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </span>
+                  <span className=""> Design and Insights.pdf</span>
+                </p>
+                <p className="Regular ">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 Download_icon"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                      />
+                    </svg>
+                  </span>
+                  Download
+                </p>
+              </div>
+              {/* end */}
 
-            <div className="StudentResource_Download d-flex  justify-content-between  ">
-              <p className="">
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 StudentResource_Chart_icon"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-                    />
-                  </svg>
-                </span>
-                <span className=""> Design and Insights.pdf</span>
-              </p>
-              <p className="Regular ">
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 Download_icon"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                    />
-                  </svg>
-                </span>
-                Download
-              </p>
+              <div className="StudentResource_Download d-flex  justify-content-between  ">
+                <p className="">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 StudentResource_Chart_icon"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </span>
+                  <span className=""> Design and Insights.pdf</span>
+                </p>
+                <p className="Regular ">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 Download_icon"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                      />
+                    </svg>
+                  </span>
+                  Download
+                </p>
+              </div>
+              {/* end */}
             </div>
-            {/* end */}
-          </div>
+          ) : (
+            <h1> Nothing for Now</h1>
+          )}
         </div>
 
         <div className=" mt-3 mt-md-0">

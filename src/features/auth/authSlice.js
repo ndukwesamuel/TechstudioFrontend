@@ -11,6 +11,7 @@ const initialState = {
   isLoading: false,
   message: "",
   isStaff: true,
+  Admin: true,
 };
 
 // Register user

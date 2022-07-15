@@ -27,7 +27,8 @@
     }
     .Dashboard_User_Aside{
         width: 30%;
-        border:  2px solid red;
+        height: 45%;
+        /* border:  2px solid red; */
     }
 
 
